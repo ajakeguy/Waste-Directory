@@ -1,0 +1,1421 @@
+[
+  {
+    "permit_id": "1105",
+    "company": "Allard&#39;s Portable Toilets, LLC",
+    "contact": "Tyler Allard",
+    "address": "386 Unity Stage Road",
+    "town": "Charlestown",
+    "state": "NH",
+    "phone": "6034773096",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 43.3063304,
+    "lng": -72.3784356,
+    "geocoded_address": "386, Unity Stage Road, North Charlestown, Charlestown, Sullivan County, New Hampshire, 03603, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 477-3096",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "allard39sportabletoilets.com",
+        "allard39sportabletoiletsvt.com",
+        "allard39sportabletoiletsvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "754",
+    "company": "B &amp; D Associates, Inc.",
+    "contact": "Kevin Fischer",
+    "address": "PO Box 598",
+    "town": "Concord",
+    "state": "NH",
+    "phone": "6032241157",
+    "permit_year": "2025",
+    "waste_types": "HSM",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(603) 224-1157",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Solid Waste",
+      "Medical Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "bampdassociates.com",
+        "bampdassociatesvt.com",
+        "bampdassociatesvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "51",
+    "company": "Beattie Enterprises, Inc.",
+    "contact": "Shane M. Beattie",
+    "address": "PO Box 26",
+    "town": "Lancaster",
+    "state": "NH",
+    "phone": "6037884035",
+    "permit_year": "2025",
+    "waste_types": "RS",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(603) 788-4035",
+    "waste_types_description": [
+      "Recyclables",
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "beattieenterprises.com",
+        "beattieenterprisesvt.com",
+        "beattieenterprisesvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2424",
+    "company": "Bergeron Septic LLC dba McKenzie Septic",
+    "contact": "Tina Bergeron",
+    "address": "21 Grissom Lane",
+    "town": "Claremont",
+    "state": "NH",
+    "phone": "6035425085",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 43.3423435,
+    "lng": -72.3666744,
+    "geocoded_address": "21, Grissom Lane, Claremont, Sullivan County, New Hampshire, 03743, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 542-5085",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "bergeronsepticmckenzieseptic.com",
+        "bergeronsepticmckenziesepticvt.com",
+        "bergeronsepticmckenziesepticvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2677",
+    "company": "Black Dog Septic LLC",
+    "contact": "Kyle Lizotte",
+    "address": "707 Calavant Hill Road",
+    "town": "Charlestown",
+    "state": "NH",
+    "phone": "6034771866",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 43.3353876,
+    "lng": -72.3904724,
+    "geocoded_address": "707, Calavant Hill Road, Charlestown, Sullivan County, New Hampshire, 03603, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 477-1866",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "blackdogseptic.com",
+        "blackdogsepticvt.com",
+        "blackdogsepticvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2386",
+    "company": "Blanc &amp; Bailey Construction, Inc.",
+    "contact": "Kathi Dixey",
+    "address": "18 Depot Street",
+    "town": "Charlestown",
+    "state": "NH",
+    "phone": "6038264626",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 43.2349209,
+    "lng": -72.4253938,
+    "geocoded_address": "Depot Road, Charlestown Main Street Historic District, Charlestown, Sullivan County, New Hampshire, 03603, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 826-4626",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "blancampbaileyconstruction.com",
+        "blancampbaileyconstructionvt.com",
+        "blancampbaileyconstructionvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "675",
+    "company": "Bolens Septic &amp; Portable Toilets LLC",
+    "contact": "Jonathan Bolens",
+    "address": "33 Brown Brook Road",
+    "town": "Stewartstown",
+    "state": "NH",
+    "phone": "603-246-7718",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 44.9497289,
+    "lng": -71.5107959,
+    "geocoded_address": "33, Brown Brook Road, Stewartstown, Co\u00f6s County, New Hampshire, 03576, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 246-7718",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "bolenssepticampportabletoilets.com",
+        "bolenssepticampportabletoiletsvt.com",
+        "bolenssepticampportabletoiletsvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "67",
+    "company": "Boudreault Septic LLC",
+    "contact": "John Boudreault Jr.",
+    "address": "3255 Dartmouth College Hwy",
+    "town": "North Haverhill",
+    "state": "NH",
+    "phone": "6033590930",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 44.0920292,
+    "lng": -72.0258499,
+    "geocoded_address": "3255, Dartmouth College Highway, North Haverhill, Haverhill, Grafton County, New Hampshire, 03785, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 359-0930",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "boudreaultseptic.com",
+        "boudreaultsepticvt.com",
+        "boudreaultsepticvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "793",
+    "company": "Brian Riff dba C.D.S. Portable Toilets",
+    "contact": "Brian Riff",
+    "address": "PO Box 324",
+    "town": "Colebrook",
+    "state": "NH",
+    "phone": "6039228310",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(603) 922-8310",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "brianriffcdsportabletoilets.com",
+        "brianriffcdsportabletoiletsvt.com",
+        "brianriffcdsportabletoiletsvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2422",
+    "company": "C&amp;D Septic Services Limited Liability Company",
+    "contact": "Candy or Dale Hammond",
+    "address": "73 Cross Road",
+    "town": "Lebanon",
+    "state": "NH",
+    "phone": "6033816196",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 43.6104848,
+    "lng": -72.2484748,
+    "geocoded_address": "Cross Road, Lebanon, Grafton County, New Hampshire, 03766, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 381-6196",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "campdsepticserviceslimitedliabilitycompany.com",
+        "campdsepticserviceslimitedliabilitycompanyvt.com",
+        "campdsepticserviceslimitedliabilitycompanyvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "866",
+    "company": "DECAMP WASTE SERVICES, LLC",
+    "contact": "TRAVIS A DECAMP",
+    "address": "PO BOX 1",
+    "town": "Newport",
+    "state": "NH",
+    "phone": "6035428050",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "Yes",
+    "service_area": "&nbsp;",
+    "lat": 43.3886849,
+    "lng": -72.2145327,
+    "geocoded_address": "North Newport, Newport, Sullivan County, New Hampshire, 03773, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 542-8050",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "decampwasteservices.com",
+        "decampwasteservicesvt.com",
+        "decampwasteservicesvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2540",
+    "company": "Diversified Brokerage &amp; Logistics of NE, LLC",
+    "contact": "Chrystal Nolet",
+    "address": "4 Windham Depot Rd box #7",
+    "town": "Derry",
+    "state": "NH",
+    "phone": "6034258229",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(603) 425-8229",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "diversifiedbrokerageamplogisticsofne.com",
+        "diversifiedbrokerageamplogisticsofnevt.com",
+        "diversifiedbrokerageamplogisticsofnevermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2223",
+    "company": "Douglas J. Dano dba D4 Rubbish Removal",
+    "contact": "Douglas J. Dano",
+    "address": "65 Brooklyn Street",
+    "town": "Groveton",
+    "state": "NH",
+    "phone": "6032372056",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 44.5977775,
+    "lng": -71.5065265,
+    "geocoded_address": "65, Brooklyn Street, Groveton, Northumberland, Co\u00f6s County, New Hampshire, 03582, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 237-2056",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "douglasjdanod4rubbishremoval.com",
+        "douglasjdanod4rubbishremovalvt.com",
+        "douglasjdanod4rubbishremovalvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2145",
+    "company": "Dustin Glidden dba Abbott Septic Service",
+    "contact": "Shannon or Dustin Glidden",
+    "address": "372 River Road",
+    "town": "Charlestown",
+    "state": "NH",
+    "phone": "6038260337",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 43.3076889,
+    "lng": -72.3867648,
+    "geocoded_address": "372, River Road, North Charlestown, Charlestown, Sullivan County, New Hampshire, 03603, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 826-0337",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "dustingliddenabbottsepticservice.com",
+        "dustingliddenabbottsepticservicevt.com",
+        "dustingliddenabbottsepticservicevermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2747",
+    "company": "ENCON Environmental Services LLC",
+    "contact": "Mike Fregeau",
+    "address": "1368 Hooksett Rd",
+    "town": "Hooksett",
+    "state": "NH",
+    "phone": "6036456549",
+    "permit_year": "2025",
+    "waste_types": "HS",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 43.0627084,
+    "lng": -71.445398,
+    "geocoded_address": "ENCON Evaporators, 1368, Hooksett Road, Hooksett, Merrimack County, New Hampshire, 03106, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 645-6549",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "enconenvironmentalservices.com",
+        "enconenvironmentalservicesvt.com",
+        "enconenvironmentalservicesvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2272",
+    "company": "GF DAMON TRUCKING LLC",
+    "contact": "Henry Frank Damon",
+    "address": "21 Bradford St.",
+    "town": "Derry",
+    "state": "NH",
+    "phone": "6032167358",
+    "permit_year": "2025",
+    "waste_types": "RS",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.8749177,
+    "lng": -71.3098067,
+    "geocoded_address": "21, Bradford Street, Derry, Rockingham County, New Hampshire, 03038, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 216-7358",
+    "waste_types_description": [
+      "Recyclables",
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "gfdamontrucking.com",
+        "gfdamontruckingvt.com",
+        "gfdamontruckingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2616",
+    "company": "Green Peak Junk Removal LLC",
+    "contact": "Christopher Goodwin",
+    "address": "50 Gunn Mountain Road",
+    "town": "Ashuelot",
+    "state": "NH",
+    "phone": "4132188025",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.7744143,
+    "lng": -72.4248442,
+    "geocoded_address": "50, Gunn Mountain Road, Ashuelot, Winchester, Cheshire County, New Hampshire, 03441, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(413) 218-8025",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "greenpeakjunkremoval.com",
+        "greenpeakjunkremovalvt.com",
+        "greenpeakjunkremovalvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "825",
+    "company": "Hammond Grinding &amp; Recycling, Inc.",
+    "contact": "Tamra Hammond",
+    "address": "PO Box 17",
+    "town": "Canaan",
+    "state": "NH",
+    "phone": "6035234353",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(603) 523-4353",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "hammondgrindingamprecycling.com",
+        "hammondgrindingamprecyclingvt.com",
+        "hammondgrindingamprecyclingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2356",
+    "company": "HB Trucking LLC",
+    "contact": "Heath Bunnell",
+    "address": "523 Littleton Rd",
+    "town": "Monroe",
+    "state": "NH",
+    "phone": "6036384983",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 44.2740492,
+    "lng": -72.0552008,
+    "geocoded_address": "523, Littleton Road, Monroe, Grafton County, New Hampshire, 03771, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 638-4983",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "hbtrucking.com",
+        "hbtruckingvt.com",
+        "hbtruckingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "262",
+    "company": "J.K. Lynch Disposal, Inc.",
+    "contact": "Cheryl Dube",
+    "address": "49 South Hill Road",
+    "town": "Colebrook",
+    "state": "NH",
+    "phone": "6032374446",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "Yes",
+    "service_area": "&nbsp;",
+    "lat": 44.9102232,
+    "lng": -71.4709663,
+    "geocoded_address": "49, South Hill Road, Colebrook, Co\u00f6s County, New Hampshire, 03576, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 237-4446",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "jklynchdisposal.com",
+        "jklynchdisposalvt.com",
+        "jklynchdisposalvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "1109",
+    "company": "Jewell Specialized Inc.",
+    "contact": "Chris Jewell, President",
+    "address": "PO Box 295",
+    "town": "Plainfield",
+    "state": "NH",
+    "phone": "6033819897",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(603) 381-9897",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "jewellspecialized.com",
+        "jewellspecializedvt.com",
+        "jewellspecializedvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2676",
+    "company": "JNVSeptic LLC",
+    "contact": "Chris Johnson",
+    "address": "64 veterans park rd",
+    "town": "Claremont",
+    "state": "NH",
+    "phone": "6035815586",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 43.3867927,
+    "lng": -72.3194098,
+    "geocoded_address": "64, Veterans Park Road, Claremont, Sullivan County, New Hampshire, 03743, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 581-5586",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "jnvseptic.com",
+        "jnvsepticvt.com",
+        "jnvsepticvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2771",
+    "company": "Juan C Rodriguez DBA ROS Transportation",
+    "contact": "Corina Lima",
+    "address": "500 South Main Street, Apt #2",
+    "town": "Manchester",
+    "state": "NH",
+    "phone": "7812674631",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(781) 267-4631",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "juancrodriguezrostransportation.com",
+        "juancrodriguezrostransportationvt.com",
+        "juancrodriguezrostransportationvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "734",
+    "company": "Justin Adams dba Quinttown Container Service",
+    "contact": "Justin Adams",
+    "address": "PO Box 13",
+    "town": "Orford",
+    "state": "NH",
+    "phone": "6033534240",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(603) 353-4240",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "justinadamsquinttowncontainerservice.com",
+        "justinadamsquinttowncontainerservicevt.com",
+        "justinadamsquinttowncontainerservicevermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "289",
+    "company": "K&amp;R Portable Restroom Services, LLC",
+    "contact": "ZACHARIAH CONLEY",
+    "address": "PO BOX 121",
+    "town": "ORFORD",
+    "state": "NH",
+    "phone": "6033534106",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(603) 353-4106",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "kamprportablerestroomservices.com",
+        "kamprportablerestroomservicesvt.com",
+        "kamprportablerestroomservicesvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2226",
+    "company": "Kevin Palazzo dba Up With The Sun Trucking",
+    "contact": "Kevin Palazzo, Owner",
+    "address": "4 Welch Lane",
+    "town": "Raymond",
+    "state": "NH",
+    "phone": "9784231584",
+    "permit_year": "2025",
+    "waste_types": "RS",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(978) 423-1584",
+    "waste_types_description": [
+      "Recyclables",
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "kevinpalazzoupwiththesuntrucking.com",
+        "kevinpalazzoupwiththesuntruckingvt.com",
+        "kevinpalazzoupwiththesuntruckingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "882",
+    "company": "Lev V. Kalinin",
+    "contact": "Lev V. Kalinin",
+    "address": "115 Prospect Street Ext.",
+    "town": "Lebanon",
+    "state": "NH",
+    "phone": "8025783676",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(802) 578-3676",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "levvkalinin.com",
+        "levvkalininvt.com",
+        "levvkalininvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2744",
+    "company": "Mack Farnsworth DBA Farnsworth Trucking and Excavating",
+    "contact": "Mack Farnsworth",
+    "address": "126 Upper Walpole Rd",
+    "town": "Walpole",
+    "state": "NH",
+    "phone": "8022891161",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 43.1100819,
+    "lng": -72.4226639,
+    "geocoded_address": "Upper Walpole Road, Cold River, Walpole, Cheshire County, New Hampshire, 05159, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(802) 289-1161",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "mackfarnsworthfarnsworthtruckingandexcavating.com",
+        "mackfarnsworthfarnsworthtruckingandexcavatingvt.com",
+        "mackfarnsworthfarnsworthtruckingandexcavatingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2523",
+    "company": "Mascoma Waste Management LLC",
+    "contact": "John Pellerin, Owner",
+    "address": "PO Box 427",
+    "town": "Enfield",
+    "state": "NH",
+    "phone": "6033042155",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "Yes",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(603) 304-2155",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "mascomawastemanagement.com",
+        "mascomawastemanagementvt.com",
+        "mascomawastemanagementvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "630",
+    "company": "Naughton &amp; Son Recycling, LLC",
+    "contact": "Jody Whelton",
+    "address": "PO Box 464",
+    "town": "Bradford",
+    "state": "NH",
+    "phone": "6039382282",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(603) 938-2282",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "naughtonampsonrecycling.com",
+        "naughtonampsonrecyclingvt.com",
+        "naughtonampsonrecyclingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "373",
+    "company": "Normandeau Trucking, Inc.",
+    "contact": "Dennis Normandeau",
+    "address": "PO Box 243",
+    "town": "Groveton",
+    "state": "NH",
+    "phone": "603-636-1671",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(603) 636-1671",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "normandeautrucking.com",
+        "normandeautruckingvt.com",
+        "normandeautruckingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "927",
+    "company": "North Coast Services, LLC",
+    "contact": "Thomas Fatcheric",
+    "address": "44 Locke Road",
+    "town": "Concord",
+    "state": "NH",
+    "phone": "603-610-7901",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 43.2442867,
+    "lng": -71.5457049,
+    "geocoded_address": "44, Locke Road, Concord, Merrimack County, New Hampshire, 03301, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 610-7901",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "northcoastservices.com",
+        "northcoastservicesvt.com",
+        "northcoastservicesvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "396",
+    "company": "Pete&#39;s Rubbish Removal Inc.",
+    "contact": "Neil Robie",
+    "address": "1130 Mt. Moosilauke Highway",
+    "town": "Pike",
+    "state": "NH",
+    "phone": "603-989-5300",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "Yes",
+    "service_area": "&nbsp;",
+    "lat": 44.0293831,
+    "lng": -71.993337,
+    "geocoded_address": "Mt Moosilauke Highway, Pike, Haverhill, Grafton County, New Hampshire, 03765, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 989-5300",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "pete39srubbishremoval.com",
+        "pete39srubbishremovalvt.com",
+        "pete39srubbishremovalvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2608",
+    "company": "PJD Septic Services, LLC",
+    "contact": "Paul J Dionne",
+    "address": "PO BOX 297",
+    "town": "Stoddard",
+    "state": "NH",
+    "phone": "6034467106",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(603) 446-7106",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "pjdsepticservices.com",
+        "pjdsepticservicesvt.com",
+        "pjdsepticservicesvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2543",
+    "company": "RYDER Restoration, Inc. dba SERVPRO of Cheshire County, Windham &amp; Windsor Cos., Barre, Montpelier",
+    "contact": "Melissa Paul",
+    "address": "140 Old Route 12E",
+    "town": "Westmoreland",
+    "state": "NH",
+    "phone": "6033527251",
+    "permit_year": "2025",
+    "waste_types": "SR",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(603) 352-7251",
+    "waste_types_description": [
+      "Solid Waste",
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "ryderrestorationservproofcheshirecountywindhamampwindsorcosbarremontpelier.com",
+        "ryderrestorationservproofcheshirecountywindhamampwindsorcosbarremontpeliervt.com",
+        "ryderrestorationservproofcheshirecountywindhamampwindsorcosbarremontpeliervermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "336",
+    "company": "Sandra Marsh dba Floyd&#39;s Rubbish Removal",
+    "contact": "Sandra Marsh",
+    "address": "9 Quinttown Road",
+    "town": "Orford",
+    "state": "NH",
+    "phone": "6033539327",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 43.8813752,
+    "lng": -72.0773072,
+    "geocoded_address": "9, Quinttown Road, Quinttown, Orford, Grafton County, New Hampshire, 03777, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 353-9327",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "sandramarshfloyd39srubbishremoval.com",
+        "sandramarshfloyd39srubbishremovalvt.com",
+        "sandramarshfloyd39srubbishremovalvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "460",
+    "company": "Schofields Septic Tank Service, Inc.",
+    "contact": "Kevin C. Schofield",
+    "address": "1121 Route 302",
+    "town": "Lisbon",
+    "state": "NH",
+    "phone": "6038386028",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(603) 838-6028",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "schofieldsseptictankservice.com",
+        "schofieldsseptictankservicevt.com",
+        "schofieldsseptictankservicevermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2112",
+    "company": "SDJ Services of Pelham LLC",
+    "contact": "Gerald J. Dallaire",
+    "address": "PO Box 304",
+    "town": "Sandown",
+    "state": "NH",
+    "phone": "9788157859",
+    "permit_year": "2025",
+    "waste_types": "SR",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(978) 815-7859",
+    "waste_types_description": [
+      "Solid Waste",
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "sdjservicesofpelham.com",
+        "sdjservicesofpelhamvt.com",
+        "sdjservicesofpelhamvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "925",
+    "company": "Septic Pro LLC",
+    "contact": "Stephen Pro",
+    "address": "PO Box 364",
+    "town": "Keene",
+    "state": "NH",
+    "phone": "8022545400",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(802) 254-5400",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "septicpro.com",
+        "septicprovt.com",
+        "septicprovermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "644",
+    "company": "Stearns Septic Service, LLC",
+    "contact": "Brian / Tina Stearns",
+    "address": "PO Box 1167",
+    "town": "Grantham",
+    "state": "NH",
+    "phone": "6034429500",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 43.4923829,
+    "lng": -72.1363094,
+    "geocoded_address": "Grantham Post Office, Route 10 South, Grantham, Sullivan County, New Hampshire, 03753, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 442-9500",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "stearnssepticservice.com",
+        "stearnssepticservicevt.com",
+        "stearnssepticservicevermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "498",
+    "company": "Steve Loud dba Timberwolf Rubbish Removal",
+    "contact": "Steve Loud",
+    "address": "10 Holly Street",
+    "town": "Woodsville",
+    "state": "NH",
+    "phone": "6039918182",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "Yes",
+    "service_area": "&nbsp;",
+    "lat": 44.1523386,
+    "lng": -72.0346591,
+    "geocoded_address": "10, Holly Street, Woodsville, Haverhill, Grafton County, New Hampshire, 03785, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 991-8182",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "steveloudtimberwolfrubbishremoval.com",
+        "steveloudtimberwolfrubbishremovalvt.com",
+        "steveloudtimberwolfrubbishremovalvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2597",
+    "company": "Stones&#39; Septic LLC",
+    "contact": "Brian Stone",
+    "address": "39 Goodell Ave",
+    "town": "Swanzey",
+    "state": "NH",
+    "phone": "6033135002",
+    "permit_year": "2025",
+    "waste_types": "SR",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.8414012,
+    "lng": -72.2754784,
+    "geocoded_address": "39, Goodell Avenue, Swanzey, Cheshire County, New Hampshire, 03446, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 313-5002",
+    "waste_types_description": [
+      "Solid Waste",
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "stones39septic.com",
+        "stones39septicvt.com",
+        "stones39septicvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "944",
+    "company": "Triple L Lumber Co., Inc.",
+    "contact": "Leon O. Wilson",
+    "address": "64 Foster Hill Road",
+    "town": "Henniker",
+    "state": "NH",
+    "phone": "603-428-3500",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 43.1908568,
+    "lng": -71.808199,
+    "geocoded_address": "64, Foster Hill Road, Henniker, Merrimack County, New Hampshire, 03242, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 428-3500",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "triplellumberco.com",
+        "triplellumbercovt.com",
+        "triplellumbercovermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2786",
+    "company": "Upper Valley Septic Professionals LLC",
+    "contact": "Jason Quenneville",
+    "address": "107 BLUEBERRY HILL DR",
+    "town": "Hanover",
+    "state": "NH",
+    "phone": "6034485000",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 43.6679163,
+    "lng": -72.1890097,
+    "geocoded_address": "107, Blueberry Hill Drive, Hanover, Grafton County, New Hampshire, 03755, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 448-5000",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "uppervalleysepticprofessionals.com",
+        "uppervalleysepticprofessionalsvt.com",
+        "uppervalleysepticprofessionalsvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "535",
+    "company": "Waste Management of NH, Inc. (dba Cheshire Sanitation)",
+    "contact": "Shawn Hood",
+    "address": "25 Monadnock Highway",
+    "town": "Swanzey",
+    "state": "NH",
+    "phone": "6033521035",
+    "permit_year": "2025",
+    "waste_types": "SR",
+    "bear_resistant": "Yes",
+    "service_area": "&nbsp;",
+    "lat": 42.9087951,
+    "lng": -72.260334,
+    "geocoded_address": "25, Monadnock Highway, North Swanzey, Swanzey, Cheshire County, New Hampshire, 03431, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 352-1035",
+    "waste_types_description": [
+      "Solid Waste",
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "wastemanagementofnhcheshiresanitation.com",
+        "wastemanagementofnhcheshiresanitationvt.com",
+        "wastemanagementofnhcheshiresanitationvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "985",
+    "company": "Wayne Frenette dba Wayn-o&#39;s Disposal Service",
+    "contact": "Wayne/Tricia Frenette",
+    "address": "PO Box 555",
+    "town": "Lancaster",
+    "state": "NH",
+    "phone": "6037882342",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "Yes",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(603) 788-2342",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "waynefrenettewayno39sdisposalservice.com",
+        "waynefrenettewayno39sdisposalservicevt.com",
+        "waynefrenettewayno39sdisposalservicevermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2461",
+    "company": "Weed Precast LLC DBA PumpTech",
+    "contact": "Linda Dimmick",
+    "address": "187 South Main street",
+    "town": "Newport",
+    "state": "NH",
+    "phone": "8027289170",
+    "permit_year": "2025",
+    "waste_types": "RS",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 43.3544344,
+    "lng": -72.1687129,
+    "geocoded_address": "187, South Main Street, Newport, Sullivan County, New Hampshire, 03773, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(802) 728-9170",
+    "waste_types_description": [
+      "Recyclables",
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "weedprecastpumptech.com",
+        "weedprecastpumptechvt.com",
+        "weedprecastpumptechvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "691",
+    "company": "White Mountain Resource Management, Inc., dba Resource Management, Inc.",
+    "contact": "Maria Feraco",
+    "address": "1171 NH Rte 175",
+    "town": "Holderness",
+    "state": "NH",
+    "phone": "6035368900",
+    "permit_year": "2025",
+    "waste_types": "RS",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(603) 536-8900",
+    "waste_types_description": [
+      "Recyclables",
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "whitemountainresourcemanagementresourcemanagement.com",
+        "whitemountainresourcemanagementresourcemanagementvt.com",
+        "whitemountainresourcemanagementresourcemanagementvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  },
+  {
+    "permit_id": "2189",
+    "company": "White&#39;s Septic Service VT LLC",
+    "contact": "Adrian Dutkewych",
+    "address": "259 Old Cherry Mountain Road",
+    "town": "Jefferson",
+    "state": "NH",
+    "phone": "6036310660",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 44.3476076,
+    "lng": -71.4627505,
+    "geocoded_address": "259, Old Cherry Mountain Road North, Jefferson, Co\u00f6s County, New Hampshire, 03583, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 631-0660",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "white39ssepticservicevt.com",
+        "white39ssepticservicevtvt.com",
+        "white39ssepticservicevtvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    }
+  }
+]

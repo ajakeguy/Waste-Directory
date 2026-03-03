@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "state": "Vermont",
+    "source": "VT DEC + Hauler Cross-Reference",
+    "total_certified_facilities": 210,
+    "facilities_with_data": 39,
+    "data_quality": "partial_seed",
+    "last_updated": "2026-03-03",
+    "notes": "This is a seed dataset. Full VT facility list requires VT DEC database access or manual research."
+  },
+  "facility_types": {
+    "transfer_stations": {
+      "description": "Facilities where waste is transferred from collection vehicles to long-distance transport",
+      "estimated_count": 80,
+      "examples": ["Town transfer stations", "District facilities"]
+    },
+    "recycling_centers": {
+      "description": "Facilities processing recyclables",
+      "estimated_count": 50,
+      "examples": ["MRFs", "Drop-off centers"]
+    },
+    "composting_facilities": {
+      "description": "Facilities processing organic waste",
+      "estimated_count": 25,
+      "examples": ["Municipal compost", "Private composters"]
+    },
+    "landfills": {
+      "description": "Active and closed waste disposal facilities",
+      "estimated_count": 5,
+      "examples": ["New England Waste Services (Coventry)", " town landfills"]
+    },
+    "cd_processors": {
+      "description": "Construction and debris processing facilities",
+      "estimated_count": 20,
+      "examples": ["C&D sorting facilities"]
+    },
+    "hhw_collection": {
+      "description": "Household hazardous waste collection sites",
+      "estimated_count": 30,
+      "examples": ["District HHW depots", "Mobile collection events"]
+    }
+  },
+  "confirmed_facilities": [
+    {
+      "name": "Chittenden Solid Waste District",
+      "town": "South Burlington",
+      "type": ["transfer_station", "recycling_center", "hhw_collection"],
+      "facility_id": "CSWD",
+      "data_source": "hauler_cross_reference",
+      "contact": "802-233-0670",
+      "confidence": "confirmed"
+    },
+    {
+      "name": "Central Vermont Solid Waste Management District",
+      "town": "Montpelier",
+      "type": ["transfer_station", "recycling_center", "hhw_collection"],
+      "facility_id": "CVSWMD",
+      "data_source": "hauler_cross_reference",
+      "contact": "802-272-9499",
+      "confidence": "confirmed"
+    },
+    {
+      "name": "Southern Windsor/Windham Counties Solid Waste Management District",
+      "town": "Ascutney",
+      "type": ["transfer_station", "recycling_center", "hhw_collection"],
+      "facility_id": "SWWCSWMD",
+      "data_source": "hauler_cross_reference",
+      "contact": "802-674-9235",
+      "confidence": "confirmed"
+    },
+    {
+      "name": "Northeast Kingdom Waste Management District",
+      "town": "Derby",
+      "type": ["transfer_station", "recycling_center"],
+      "facility_id": "NEKWMD",
+      "data_source": "hauler_cross_reference",
+      "confidence": "confirmed"
+    },
+    {
+      "name": "Northwest Vermont Solid Waste District",
+      "town": "Stowe",
+      "type": ["transfer_station", "recycling_center"],
+      "facility_id": "NWVSWD",
+      "data_source": "hauler_cross_reference",
+      "confidence": "confirmed"
+    },
+    {
+      "name": "Addison County Solid Waste Management District",
+      "town": "Middlebury",
+      "type": ["transfer_station", "recycling_center"],
+      "facility_id": "ACSWMD",
+      "data_source": "hauler_cross_reference",
+      "contact": "802-388-2333",
+      "confidence": "confirmed"
+    },
+    {
+      "name": "Rutland County Solid Waste District",
+      "town": "Rutland",
+      "type": ["transfer_station", "recycling_center", "hhw_collection"],
+      "facility_id": "RCSWD",
+      "data_source": "hauler_cross_reference",
+      "confidence": "confirmed"
+    },
+    {
+      "name": "Windham Solid Waste Management District",
+      "town": "Brattleboro",
+      "type": ["transfer_station", "recycling_center", "hhw_collection"],
+      "facility_id": "WSWMD",
+      "data_source": "hauler_cross_reference",
+      "confidence": "confirmed"
+    },
+    {
+      "name": "Lamoille Regional Solid Waste Management District",
+      "town": "Morristown",
+      "type": ["transfer_station", "recycling_center"],
+      "facility_id": "LRSWMD",
+      "data_source": "hauler_cross_reference",
+      "confidence": "confirmed"
+    },
+    {
+      "name": "New England Waste Services (Coventry Landfill)",
+      "town": "Coventry",
+      "type": ["landfill"],
+      "facility_id": "OL510",
+      "data_source": "vt_dec_reference",
+      "notes": "Vermont's primary landfill",
+      "confidence": "confirmed"
+    }
+  ],
+  "research_needed": {
+    "total_facilities_to_find": 200,
+    "known_gaps": [
+      "Town-run transfer stations (70+ towns)",
+      "Private recycling facilities",
+      "Composting operations",
+      "C&D processors",
+      "Scrap metal yards",
+      "Electronics recyclers",
+      "Food scrap collection sites"
+    ],
+    "data_sources_to_explore": [
+      "Vermont DEC Solid Waste Facility Certification database",
+      "VT ANR Materials Management Map (scrape or request data)",
+      "Individual town websites",
+      "District facility lists",
+      "EPA RCRAInfo (generator database)",
+      "Trade association directories (NWRA, SWANA)"
+    ]
+  }
+}
