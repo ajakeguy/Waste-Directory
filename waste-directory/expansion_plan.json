@@ -1,0 +1,116 @@
+{
+  "analysis": {
+    "total_haulers": 476,
+    "total_facilities": 212,
+    "by_state": {
+      "VT": 341,
+      "NH": 49,
+      "MA": 53,
+      "NY": 25,
+      "NJ": 8
+    },
+    "new_england_states": [
+      "VT",
+      "NH",
+      "MA",
+      "ME",
+      "CT",
+      "RI"
+    ],
+    "mid_atlantic_states": [
+      "NY",
+      "NJ"
+    ],
+    "complete_coverage": [
+      "VT"
+    ],
+    "partial_coverage": [
+      "NH",
+      "MA",
+      "NY",
+      "NJ"
+    ],
+    "missing_coverage": [
+      "ME",
+      "CT",
+      "RI"
+    ]
+  },
+  "plan": {
+    "phase_a_new_england": {
+      "description": "Complete New England coverage (VT, NH, MA, ME, CT, RI)",
+      "states": {
+        "VT": {
+          "status": "complete",
+          "haulers": 341,
+          "facilities": 212,
+          "data_source": "VT DEC Solid Waste Program",
+          "quality": "gold_standard"
+        },
+        "NH": {
+          "status": "partial",
+          "haulers": 49,
+          "data_source": "Cross-reference from VT permits",
+          "quality": "cross_reference",
+          "action": "Research NH DES registered hauler list"
+        },
+        "MA": {
+          "status": "partial",
+          "haulers": 53,
+          "data_source": "Cross-reference from VT permits",
+          "quality": "cross_reference",
+          "action": "Research MassDEP solid waste transporter database"
+        },
+        "ME": {
+          "status": "research_in_progress",
+          "haulers": 0,
+          "data_source": "Maine DEP",
+          "files": [
+            "me_hazardous_transporters.pdf"
+          ],
+          "action": "Parse PDFs, request non-hazardous transporter list"
+        },
+        "CT": {
+          "status": "research_in_progress",
+          "haulers": 0,
+          "data_source": "CT DEEP",
+          "files": [
+            "deep-waste-transporter-list.pdf"
+          ],
+          "action": "Download and parse transporter list PDF"
+        },
+        "RI": {
+          "status": "research_in_progress",
+          "haulers": 0,
+          "data_source": "RI Resource Recovery Corporation",
+          "files": [
+            "ri_hauler_list.pdf"
+          ],
+          "action": "Parse PDF (updated 8/2024)"
+        }
+      }
+    },
+    "phase_b_data_enrichment": {
+      "description": "Deepen existing state data",
+      "tasks": [
+        "Research NYSDEC Part 364 waste transporter permits",
+        "Research NJDEP A-901 licensed transporters",
+        "Geocode remaining 224 VT addresses",
+        "Verify NH/MA cross-referenced haulers with state permits"
+      ]
+    },
+    "phase_c_website_enrichment": {
+      "description": "Crawl and verify website data",
+      "tasks": [
+        "Verify generated website patterns for all 476 haulers",
+        "Extract hours, services, contact info from websites",
+        "Add customer review aggregation",
+        "Validate business information"
+      ]
+    }
+  },
+  "metadata": {
+    "created": "2026-03-05T01:37:50.898238",
+    "version": "2.0"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "current": {
+    "total_haulers": 476,
+    "total_facilities": 212,
+    "by_state": {
+      "VT": 341,
+      "NH": 49,
+      "MA": 53,
+      "NY": 25,
+      "NJ": 8
+    },
+    "gold_standard": 0,
+    "cross_reference": 0
+  },
+  "target": {
+    "new_england_completion": [
+      "ME",
+      "CT",
+      "RI"
+    ],
+    "vt_facilities": 212,
+    "data_sources": {
+      "VT": "DEC (complete)",
+      "NH": "Cross-reference (needs verification)",
+      "MA": "Cross-reference (needs verification)",
+      "NY": "Research needed",
+      "NJ": "Research needed",
+      "ME": "PDF downloaded - needs parsing",
+      "CT": "PDF available",
+      "RI": "PDF downloaded - needs parsing"
+    }
+  }
+}

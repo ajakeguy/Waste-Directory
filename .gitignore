@@ -1,0 +1,26 @@
+# Waste Directory V2 - .gitignore
+
+# Secrets
+.github_token
+*.token
+.env
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test directories
+test-repo/
+waste-v2-temp/
+
+# Archive files (already extracted)
+waste-directory-deploy.tar.gz
+
+# Session files
+.openclaw/workspace-state.json

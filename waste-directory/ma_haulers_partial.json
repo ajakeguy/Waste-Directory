@@ -1,0 +1,1847 @@
+[
+  {
+    "permit_id": "559",
+    "company": "A1, Inc.",
+    "contact": "Erin Scott",
+    "address": "28 Cross Road",
+    "town": "Clarksburg",
+    "state": "MA",
+    "phone": "413-663-8351",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.7198289,
+    "lng": -73.0957513,
+    "geocoded_address": "Cross Road, Briggsville, Clarksburg, Berkshire County, Massachusetts, 01247, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(413) 663-8351",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "a1.com",
+        "a1vt.com",
+        "a1vermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0391"
+  },
+  {
+    "permit_id": "2745",
+    "company": "Allens Affordable Roll-Off, Inc.",
+    "contact": "Tracy Miner",
+    "address": "34 A East Main Street",
+    "town": "Millers Falls",
+    "state": "MA",
+    "phone": "4137747774",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.5781553,
+    "lng": -72.4936625,
+    "geocoded_address": "East Main Street, Grounts Corner, Montague, Franklin County, Massachusetts, 01349, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(413) 774-7774",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "allensaffordablerolloff.com",
+        "allensaffordablerolloffvt.com",
+        "allensaffordablerolloffvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0392"
+  },
+  {
+    "permit_id": "1090",
+    "company": "American Environmental, Inc.",
+    "contact": "Layla H Bermejo- Verdugo",
+    "address": "18 Canal Street",
+    "town": "Holyoke",
+    "state": "MA",
+    "phone": "413-322-7190",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.2074723,
+    "lng": -72.599905,
+    "geocoded_address": "18;20, Canal Street, The Flats, Holyoke, Hampden County, Massachusetts, 01040, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(413) 322-7190",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "americanenvironmental.com",
+        "americanenvironmentalvt.com",
+        "americanenvironmentalvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0393"
+  },
+  {
+    "permit_id": "703",
+    "company": "Associated Building Wreckers, Inc.",
+    "contact": "Jennifer Jodoin/Andrew Mirkin",
+    "address": "352 Albany Street",
+    "town": "Springfield",
+    "state": "MA",
+    "phone": "4137323179",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.1211556,
+    "lng": -72.5725526,
+    "geocoded_address": "350;352, Albany Street, Upper Worthington Historic District, Bay, McKnight, Springfield, Hampden County, Massachusetts, 01104, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(413) 732-3179",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "associatedbuildingwreckers.com",
+        "associatedbuildingwreckersvt.com",
+        "associatedbuildingwreckersvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0394"
+  },
+  {
+    "permit_id": "1030",
+    "company": "Baker Commodities, Inc.",
+    "contact": "Shawn Ordway",
+    "address": "PO Box 132",
+    "town": "North Billerica",
+    "state": "MA",
+    "phone": "9786547724",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(978) 654-7724",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "bakercommodities.com",
+        "bakercommoditiesvt.com",
+        "bakercommoditiesvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "missing",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0395"
+  },
+  {
+    "permit_id": "2527",
+    "company": "Bio-Med Innovations, LLC dba New England MedWaste",
+    "contact": "Matthew Nekoroski, CEO",
+    "address": "30 Log Bridge Road, Bldg 100 Ste 108",
+    "town": "Middleton",
+    "state": "MA",
+    "phone": "8006114930",
+    "permit_year": "2025",
+    "waste_types": "&nbsp;",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(800) 611-4930",
+    "waste_types_description": [],
+    "website_data": {
+      "possible_domains": [
+        "biomedinnovationsnewenglandmedwaste.com",
+        "biomedinnovationsnewenglandmedwastevt.com",
+        "biomedinnovationsnewenglandmedwastevermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "missing",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0396"
+  },
+  {
+    "permit_id": "64",
+    "company": "Bostley Sanitary Service, Inc.",
+    "contact": "Amberlyn Beausoliel",
+    "address": "268 E. Colrain Road",
+    "town": "Colrain",
+    "state": "MA",
+    "phone": "4137726531",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.6476437,
+    "lng": -72.6419042,
+    "geocoded_address": "268, East Colrain Road, Colrain, Franklin County, Massachusetts, 01340, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(413) 772-6531",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "bostleysanitaryservice.com",
+        "bostleysanitaryservicevt.com",
+        "bostleysanitaryservicevermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0397"
+  },
+  {
+    "permit_id": "1086",
+    "company": "Boston Green Fuel Co., Inc.",
+    "contact": "Brenda Dennison",
+    "address": "102 Charles Eldridge Drive",
+    "town": "Lakeville",
+    "state": "MA",
+    "phone": "8883382657",
+    "permit_year": "2025",
+    "waste_types": "SH",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 41.8749769,
+    "lng": -70.948036,
+    "geocoded_address": "102, Charles Eldridge Drive, Lakeville, Plymouth County, Massachusetts, 02349, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(888) 338-2657",
+    "waste_types_description": [
+      "Solid Waste",
+      "Hazardous Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "bostongreenfuelco.com",
+        "bostongreenfuelcovt.com",
+        "bostongreenfuelcovermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0398"
+  },
+  {
+    "permit_id": "1023",
+    "company": "Brighter Horizons Environmental Corporation",
+    "contact": "John Nelson",
+    "address": "201 West Main Street",
+    "town": "Ayer",
+    "state": "MA",
+    "phone": "9789700500",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.5555918,
+    "lng": -71.6044447,
+    "geocoded_address": "201, West Main Street, Ayer, Middlesex County, Massachusetts, 01432, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(978) 970-0500",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "brighterhorizonsenvironmentalcorporation.com",
+        "brighterhorizonsenvironmentalcorporationvt.com",
+        "brighterhorizonsenvironmentalcorporationvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0399"
+  },
+  {
+    "permit_id": "2308",
+    "company": "Casella Waste Management of Massachusetts, Inc.",
+    "contact": "TRACY MARKHAM",
+    "address": "165 Barefoot Road",
+    "town": "Southbridge",
+    "state": "MA",
+    "phone": "7743641940",
+    "permit_year": "2025",
+    "waste_types": "RSM",
+    "bear_resistant": "Yes",
+    "service_area": "&nbsp;",
+    "lat": 42.107911,
+    "lng": -72.0363511,
+    "geocoded_address": "165, Barefoot Road, Southbridge, Worcester County, Massachusetts, 01550, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(774) 364-1940",
+    "waste_types_description": [
+      "Recyclables",
+      "Solid Waste",
+      "Medical Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "casellawastemanagementofmassachusetts.com",
+        "casellawastemanagementofmassachusettsvt.com",
+        "casellawastemanagementofmassachusettsvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0400"
+  },
+  {
+    "permit_id": "107",
+    "company": "Clean Harbors Environmental Services, Inc.",
+    "contact": "Colleen Costello, TC Senior Manager",
+    "address": "Norwell",
+    "town": "Norwell",
+    "state": "MA",
+    "phone": "7817975760",
+    "permit_year": "2025",
+    "waste_types": "HRSM",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.1620458,
+    "lng": -70.7855972,
+    "geocoded_address": "Norwell Village Area Historic District, Main Street, Kings Landing, Norwell, Plymouth County, Massachusetts, 02066, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(781) 797-5760",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Recyclables",
+      "Solid Waste",
+      "Medical Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "cleanharborsenvironmentalservices.com",
+        "cleanharborsenvironmentalservicesvt.com",
+        "cleanharborsenvironmentalservicesvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0401"
+  },
+  {
+    "permit_id": "2613",
+    "company": "Cobrita Trucking Inc",
+    "contact": "Wilder Munoz",
+    "address": "1627 North Shore Road",
+    "town": "Revere",
+    "state": "MA",
+    "phone": "7818700472",
+    "permit_year": "2025",
+    "waste_types": "SR",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.4047625,
+    "lng": -70.9943659,
+    "geocoded_address": "1627, North Shore Road, Beachmont Square, Crescent Beach, Beachmont, Revere, Suffolk County, Massachusetts, 02151, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(781) 870-0472",
+    "waste_types_description": [
+      "Solid Waste",
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "cobritatrucking.com",
+        "cobritatruckingvt.com",
+        "cobritatruckingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0402"
+  },
+  {
+    "permit_id": "670",
+    "company": "Complete Recycling Solutions LLC",
+    "contact": "Olivia Stevens",
+    "address": "1075 Airport Road",
+    "town": "Fall River",
+    "state": "MA",
+    "phone": "6036604240",
+    "permit_year": "2025",
+    "waste_types": "HS",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 41.7454534,
+    "lng": -71.107579,
+    "geocoded_address": "1075, Airport Road, Fall River, Bristol County, Massachusetts, 02720, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 660-4240",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "completerecyclingsolutions.com",
+        "completerecyclingsolutionsvt.com",
+        "completerecyclingsolutionsvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0403"
+  },
+  {
+    "permit_id": "122",
+    "company": "Cyn Oil Corporation",
+    "contact": "Colleen Costello",
+    "address": "42 Longwater Dr.",
+    "town": "Norwell",
+    "state": "MA",
+    "phone": "781-792-5777",
+    "permit_year": "2025",
+    "waste_types": "HS",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.160603,
+    "lng": -70.884072,
+    "geocoded_address": "42, Longwater Drive, Norwell, Plymouth County, Massachusetts, 02239, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(781) 792-5777",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "cynoilcorporation.com",
+        "cynoilcorporationvt.com",
+        "cynoilcorporationvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0404"
+  },
+  {
+    "permit_id": "1067",
+    "company": "Delmolino &amp; Sons, Inc.",
+    "contact": "Kyle J. Delmolino",
+    "address": "PO Box T",
+    "town": "Cheshire",
+    "state": "MA",
+    "phone": "4137435397",
+    "permit_year": "2025",
+    "waste_types": "SR",
+    "bear_resistant": "Yes",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(413) 743-5397",
+    "waste_types_description": [
+      "Solid Waste",
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "delmolinoampsons.com",
+        "delmolinoampsonsvt.com",
+        "delmolinoampsonsvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "missing",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0405"
+  },
+  {
+    "permit_id": "2583",
+    "company": "Dumpsters R US Inc.",
+    "contact": "David Brownsberger",
+    "address": "58 Lowell Junction Road",
+    "town": "Andover",
+    "state": "MA",
+    "phone": "9784092111",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "Yes",
+    "service_area": "&nbsp;",
+    "lat": 42.6156026,
+    "lng": -71.1656915,
+    "geocoded_address": "58, Lowell Junction Road, Lowell Junction, Ballardvale, Andover, Essex County, Massachusetts, 01810, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(978) 409-2111",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "dumpstersrus.com",
+        "dumpstersrusvt.com",
+        "dumpstersrusvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0406"
+  },
+  {
+    "permit_id": "194",
+    "company": "EQ Northeast, Inc. (dba US Ecology)",
+    "contact": "Wanda Tobey",
+    "address": "185 Industrial Road",
+    "town": "Wrentham",
+    "state": "MA",
+    "phone": "5088031237",
+    "permit_year": "2025",
+    "waste_types": "HS",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.0776309,
+    "lng": -71.3610847,
+    "geocoded_address": "185, Industrial Road, Wrentham, Norfolk County, Massachusetts, 02093, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(508) 803-1237",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "eqnortheastusecology.com",
+        "eqnortheastusecologyvt.com",
+        "eqnortheastusecologyvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0407"
+  },
+  {
+    "permit_id": "915",
+    "company": "Everett A. Russell III dba E. A. Russell Trucking",
+    "contact": "Everett A. Russell III",
+    "address": "478 Merrimack Street",
+    "town": "Methuen",
+    "state": "MA",
+    "phone": "9788156299",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.7520518,
+    "lng": -71.1284529,
+    "geocoded_address": "478, Merrimack Street, The Valley, Methuen, Essex County, Massachusetts, 01832, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(978) 815-6299",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "everettarusselliiiearusselltrucking.com",
+        "everettarusselliiiearusselltruckingvt.com",
+        "everettarusselliiiearusselltruckingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0408"
+  },
+  {
+    "permit_id": "2178",
+    "company": "FBS Tire Recycling, Inc.",
+    "contact": "Jessica Figueroa",
+    "address": "PO Box 332",
+    "town": "Ayer",
+    "state": "MA",
+    "phone": "978-772-4251",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(978) 772-4251",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "fbstirerecycling.com",
+        "fbstirerecyclingvt.com",
+        "fbstirerecyclingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "missing",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0409"
+  },
+  {
+    "permit_id": "191",
+    "company": "Frank Corporation Environmental Services",
+    "contact": "Kirk J. Franklin",
+    "address": "615 Tarkiln Hill Road",
+    "town": "New Bedford",
+    "state": "MA",
+    "phone": "5089959997",
+    "permit_year": "2025",
+    "waste_types": "HS",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 41.6800625,
+    "lng": -70.9406606,
+    "geocoded_address": "615, Tarkiln Hill Road, New Bedford, Bristol County, Massachusetts, 02746, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(508) 995-9997",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "frankcorporationenvironmentalservices.com",
+        "frankcorporationenvironmentalservicesvt.com",
+        "frankcorporationenvironmentalservicesvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0410"
+  },
+  {
+    "permit_id": "2283",
+    "company": "GMG Enterprises, Inc.",
+    "contact": "Brooke Hastings",
+    "address": "239 Greenfield Road",
+    "town": "South Deerfield",
+    "state": "MA",
+    "phone": "4136653989",
+    "permit_year": "2025",
+    "waste_types": "R",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.4907075,
+    "lng": -72.6110814,
+    "geocoded_address": "Greenfield Road, South Deerfield, Deerfield, Franklin County, Massachusetts, 01373, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(413) 665-3989",
+    "waste_types_description": [
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "gmgenterprises.com",
+        "gmgenterprisesvt.com",
+        "gmgenterprisesvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0411"
+  },
+  {
+    "permit_id": "211",
+    "company": "Goulet Trucking, Inc.",
+    "contact": "CRYSTAL WILKINSON",
+    "address": "PO Box 259",
+    "town": "S. Deerfield",
+    "state": "MA",
+    "phone": "4136651323",
+    "permit_year": "2025",
+    "waste_types": "HRS",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(413) 665-1323",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Recyclables",
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "goulettrucking.com",
+        "goulettruckingvt.com",
+        "goulettruckingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "missing",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0412"
+  },
+  {
+    "permit_id": "1008",
+    "company": "Graf Bros. Leasing, Inc.",
+    "contact": "Thomas Girard",
+    "address": "166 Lafayette Road",
+    "town": "Salisbury",
+    "state": "MA",
+    "phone": "8002250538",
+    "permit_year": "2025",
+    "waste_types": "HSR",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.8622791,
+    "lng": -70.8730548,
+    "geocoded_address": "166, Lafayette Road, Salisbury, Essex County, Massachusetts, 03874, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(800) 225-0538",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Solid Waste",
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "grafbrosleasing.com",
+        "grafbrosleasingvt.com",
+        "grafbrosleasingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0413"
+  },
+  {
+    "permit_id": "2446",
+    "company": "Green Site Services Group, Inc.",
+    "contact": "jackson shiebler",
+    "address": "25 Forge Parkway",
+    "town": "Franklin",
+    "state": "MA",
+    "phone": "5089662020",
+    "permit_year": "2025",
+    "waste_types": "SHR",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.083799,
+    "lng": -71.4395897,
+    "geocoded_address": "25, Forge Parkway, Country View Estates, Franklin, Norfolk County, Massachusetts, 02019, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(508) 966-2020",
+    "waste_types_description": [
+      "Solid Waste",
+      "Hazardous Waste",
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "greensiteservicesgroup.com",
+        "greensiteservicesgroupvt.com",
+        "greensiteservicesgroupvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0414"
+  },
+  {
+    "permit_id": "858",
+    "company": "Gurrisi Brothers Auto &amp; Truck Sales &amp; Salvage, LLC",
+    "contact": "Linda Gurrisi Vining",
+    "address": "0 Corwin Street",
+    "town": "Peabody",
+    "state": "MA",
+    "phone": "9788186248",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.5186927,
+    "lng": -70.9596823,
+    "geocoded_address": "Corwin Street, Peabody, Essex County, Massachusetts, 01960, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(978) 818-6248",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "gurrisibrothersautoamptrucksalesampsalvage.com",
+        "gurrisibrothersautoamptrucksalesampsalvagevt.com",
+        "gurrisibrothersautoamptrucksalesampsalvagevermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0415"
+  },
+  {
+    "permit_id": "2265",
+    "company": "Hepaco, LLC",
+    "contact": "Bri Pickering",
+    "address": "42 Longwater Drive",
+    "town": "Norwell",
+    "state": "MA",
+    "phone": "3392145822",
+    "permit_year": "2025",
+    "waste_types": "HRSM",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.160603,
+    "lng": -70.884072,
+    "geocoded_address": "42, Longwater Drive, Norwell, Plymouth County, Massachusetts, 02239, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(339) 214-5822",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Recyclables",
+      "Solid Waste",
+      "Medical Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "hepaco.com",
+        "hepacovt.com",
+        "hepacovermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0416"
+  },
+  {
+    "permit_id": "2565",
+    "company": "J R AND SONS CONSTRUCTION, INC.",
+    "contact": "Lauren Russo",
+    "address": "4 Hallberg Park",
+    "town": "North Reading",
+    "state": "MA",
+    "phone": "7812584455",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.5587617,
+    "lng": -71.1243925,
+    "geocoded_address": "4, Hallberg Park, North Reading, Middlesex County, Massachusetts, 01864, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(781) 258-4455",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "jrandsonsconstruction.com",
+        "jrandsonsconstructionvt.com",
+        "jrandsonsconstructionvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0417"
+  },
+  {
+    "permit_id": "2673",
+    "company": "Jason Hooks DBA Small Town Trash Removal",
+    "contact": "Jason Hooks",
+    "address": "10 Briggs Street",
+    "town": "North Adams",
+    "state": "MA",
+    "phone": "4136639302",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "Yes",
+    "service_area": "&nbsp;",
+    "lat": 42.7087866,
+    "lng": -73.1066109,
+    "geocoded_address": "10, Briggs Street, Freeman Grove Historic District, North Adams, Berkshire County, Massachusetts, 01247, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(413) 663-9302",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "jasonhookssmalltowntrashremoval.com",
+        "jasonhookssmalltowntrashremovalvt.com",
+        "jasonhookssmalltowntrashremovalvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0418"
+  },
+  {
+    "permit_id": "901",
+    "company": "Lavallee Trucking &amp; Excavating LLC",
+    "contact": "James Lavallee / Kristi Szawlowski (Secretary)",
+    "address": "PO Box 383",
+    "town": "Hatfield",
+    "state": "MA",
+    "phone": "4139234555",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(413) 923-4555",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "lavalleetruckingampexcavating.com",
+        "lavalleetruckingampexcavatingvt.com",
+        "lavalleetruckingampexcavatingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "missing",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0419"
+  },
+  {
+    "permit_id": "2635",
+    "company": "Melnik Farms LLC",
+    "contact": "Paul Kokoski",
+    "address": "188 Mill Village Rd",
+    "town": "Deerfield",
+    "state": "MA",
+    "phone": "4135310633",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.5193549,
+    "lng": -72.6177442,
+    "geocoded_address": "188, Mill Village Road, Wapping, Deerfield, Franklin County, Massachusetts, 01342, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(413) 531-0633",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "melnikfarms.com",
+        "melnikfarmsvt.com",
+        "melnikfarmsvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0420"
+  },
+  {
+    "permit_id": "462",
+    "company": "Moran Environmental Recovery LLC",
+    "contact": "Jeff Magyar",
+    "address": "75 D York Avenue",
+    "town": "Randolph",
+    "state": "MA",
+    "phone": "7818151100",
+    "permit_year": "2025",
+    "waste_types": "HSM",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.181535,
+    "lng": -71.071024,
+    "geocoded_address": "York Avenue, York Industrial Park, North Randolph, Randolph, Norfolk County, Massachusetts, 02368, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(781) 815-1100",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Solid Waste",
+      "Medical Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "moranenvironmentalrecovery.com",
+        "moranenvironmentalrecoveryvt.com",
+        "moranenvironmentalrecoveryvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0421"
+  },
+  {
+    "permit_id": "2506",
+    "company": "Munoz Trucking LLC",
+    "contact": "Guillermo Munoz",
+    "address": "1 Dix st,apt 1,Revere MA 02151",
+    "town": "Revere",
+    "state": "MA",
+    "phone": "6179593529",
+    "permit_year": "2025",
+    "waste_types": "SR",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(617) 959-3529",
+    "waste_types_description": [
+      "Solid Waste",
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "munoztrucking.com",
+        "munoztruckingvt.com",
+        "munoztruckingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "missing",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0422"
+  },
+  {
+    "permit_id": "856",
+    "company": "Mystic Motor Transportation Co., Inc.",
+    "contact": "Charles Daly",
+    "address": "PO Box 1082",
+    "town": "Billerica",
+    "state": "MA",
+    "phone": "9786675656",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(978) 667-5656",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "mysticmotortransportationco.com",
+        "mysticmotortransportationcovt.com",
+        "mysticmotortransportationcovermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "missing",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0423"
+  },
+  {
+    "permit_id": "384",
+    "company": "Oil Recovery Corporation",
+    "contact": "Luke Gagnon",
+    "address": "138 Palmer Ave",
+    "town": "West Springfield",
+    "state": "MA",
+    "phone": "413-737-2949",
+    "permit_year": "2025",
+    "waste_types": "HSM",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.0903257,
+    "lng": -72.6031419,
+    "geocoded_address": "138, Palmer Avenue, West Springfield, Hampden County, Massachusetts, 01115, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(413) 737-2949",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Solid Waste",
+      "Medical Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "oilrecoverycorporation.com",
+        "oilrecoverycorporationvt.com",
+        "oilrecoverycorporationvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0424"
+  },
+  {
+    "permit_id": "2610",
+    "company": "R B Greene Trucking LLC",
+    "contact": "Randy Greene",
+    "address": "41 UNION POINT RD",
+    "town": "Webster",
+    "state": "MA",
+    "phone": "8603823272",
+    "permit_year": "2025",
+    "waste_types": "&nbsp;",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.0410849,
+    "lng": -71.8529431,
+    "geocoded_address": "41, Union Point Road, Webster, Worcester County, Massachusetts, 01570, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(860) 382-3272",
+    "waste_types_description": [],
+    "website_data": {
+      "possible_domains": [
+        "rbgreenetrucking.com",
+        "rbgreenetruckingvt.com",
+        "rbgreenetruckingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0425"
+  },
+  {
+    "permit_id": "913",
+    "company": "Ranger, Inc.",
+    "contact": "Jessica Anger",
+    "address": "PO Box 432",
+    "town": "Sutton",
+    "state": "MA",
+    "phone": "5088651880",
+    "permit_year": "2025",
+    "waste_types": "H",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(508) 865-1880",
+    "waste_types_description": [
+      "Hazardous Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "ranger.com",
+        "rangervt.com",
+        "rangervermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "missing",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0426"
+  },
+  {
+    "permit_id": "2343",
+    "company": "Recycling Services, Inc.",
+    "contact": "Francesco Finocchiaro",
+    "address": "166A Merrimack Street",
+    "town": "Methuen",
+    "state": "MA",
+    "phone": "6035428755",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.7534639,
+    "lng": -71.1289642,
+    "geocoded_address": "Merrimack Street, The Valley, Methuen, Essex County, Massachusetts, 01832, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(603) 542-8755",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "recyclingservices.com",
+        "recyclingservicesvt.com",
+        "recyclingservicesvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0427"
+  },
+  {
+    "permit_id": "860",
+    "company": "Red Baron Trucking, Inc.",
+    "contact": "Stephan Zeller",
+    "address": "0 Corwin St",
+    "town": "Peabody",
+    "state": "MA",
+    "phone": "6175107658",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.5186927,
+    "lng": -70.9596823,
+    "geocoded_address": "Corwin Street, Peabody, Essex County, Massachusetts, 01960, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(617) 510-7658",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "redbarontrucking.com",
+        "redbarontruckingvt.com",
+        "redbarontruckingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0428"
+  },
+  {
+    "permit_id": "2791",
+    "company": "Removal Pro LLC",
+    "contact": "Michael Haikola",
+    "address": "PO BOX 880",
+    "town": "Raynham Center",
+    "state": "MA",
+    "phone": "7745044288",
+    "permit_year": "2025",
+    "waste_types": "HS",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(774) 504-4288",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "removalpro.com",
+        "removalprovt.com",
+        "removalprovermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "missing",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0429"
+  },
+  {
+    "permit_id": "688",
+    "company": "Reworld Remediation Services, Inc",
+    "contact": "Diane Hunt",
+    "address": "700 Richmond Street",
+    "town": "E. Taunton",
+    "state": "MA",
+    "phone": "508-828-1005",
+    "permit_year": "2025",
+    "waste_types": "HS",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(508) 828-1005",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "reworldremediationservices.com",
+        "reworldremediationservicesvt.com",
+        "reworldremediationservicesvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "missing",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0430"
+  },
+  {
+    "permit_id": "2253",
+    "company": "Robert Bates Inc., dba Bobs Tire Co.",
+    "contact": "Robert Bates",
+    "address": "PO Box 1090",
+    "town": "Mattapoisett",
+    "state": "MA",
+    "phone": "5089978545",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 41.6633743,
+    "lng": -70.8133015,
+    "geocoded_address": "Mattapoisett Post Office, 30, County Road, Mattapoisett, Plymouth County, Massachusetts, 02739, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(508) 997-8545",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "robertbatesbobstireco.com",
+        "robertbatesbobstirecovt.com",
+        "robertbatesbobstirecovermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0431"
+  },
+  {
+    "permit_id": "2128",
+    "company": "S.W.M. Corporation",
+    "contact": "Guillermo Leon Munoz Castrillion",
+    "address": "1 Dix Street, Apt. 1",
+    "town": "Revere",
+    "state": "MA",
+    "phone": "6179593529",
+    "permit_year": "2025",
+    "waste_types": "SR",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(617) 959-3529",
+    "waste_types_description": [
+      "Solid Waste",
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "swmcorporation.com",
+        "swmcorporationvt.com",
+        "swmcorporationvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "missing",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0432"
+  },
+  {
+    "permit_id": "452",
+    "company": "Safety-Kleen Systems, Inc.",
+    "contact": "Colleen Costello",
+    "address": "42 Longwater Drive",
+    "town": "Norwell",
+    "state": "MA",
+    "phone": "781-792-5787",
+    "permit_year": "2025",
+    "waste_types": "HRSM",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.160603,
+    "lng": -70.884072,
+    "geocoded_address": "42, Longwater Drive, Norwell, Plymouth County, Massachusetts, 02239, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(781) 792-5787",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Recyclables",
+      "Solid Waste",
+      "Medical Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "safetykleensystems.com",
+        "safetykleensystemsvt.com",
+        "safetykleensystemsvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0433"
+  },
+  {
+    "permit_id": "1096",
+    "company": "SCOTT SMITH TRUCKING, INC.",
+    "contact": "LAURALEE SMITH",
+    "address": "PO BOX 616",
+    "town": "WILLIAMSTOWN",
+    "state": "MA",
+    "phone": "4135537162",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(413) 553-7162",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "scottsmithtrucking.com",
+        "scottsmithtruckingvt.com",
+        "scottsmithtruckingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "missing",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0434"
+  },
+  {
+    "permit_id": "1073",
+    "company": "Strategic Environmental Services, Inc.",
+    "contact": "Laura Gaspa",
+    "address": "362 Putnam Hill Road",
+    "town": "Sutton",
+    "state": "MA",
+    "phone": "5087577782",
+    "permit_year": "2025",
+    "waste_types": "HS",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.1042285,
+    "lng": -71.7533801,
+    "geocoded_address": "362, Putnam Hill Road, Manchaug, Sutton, Worcester County, Massachusetts, 01590, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(508) 757-7782",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "strategicenvironmentalservices.com",
+        "strategicenvironmentalservicesvt.com",
+        "strategicenvironmentalservicesvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0435"
+  },
+  {
+    "permit_id": "2558",
+    "company": "Trident Environmental Group LLC",
+    "contact": "Lisa Raye",
+    "address": "15 SHIRE DR",
+    "town": "Norfolk",
+    "state": "MA",
+    "phone": "5082293545",
+    "permit_year": "2025",
+    "waste_types": "HS",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.0885423,
+    "lng": -71.3056665,
+    "geocoded_address": "15, Shire Drive, Norfolk, Norfolk County, Massachusetts, 02056, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(508) 229-3545",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "tridentenvironmentalgroup.com",
+        "tridentenvironmentalgroupvt.com",
+        "tridentenvironmentalgroupvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0436"
+  },
+  {
+    "permit_id": "514",
+    "company": "Triumvirate Environmental LLC",
+    "contact": "Donna McLean",
+    "address": "200 Innerbelt Road",
+    "town": "Somerville",
+    "state": "MA",
+    "phone": "6176288098",
+    "permit_year": "2025",
+    "waste_types": "HSM",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(617) 628-8098",
+    "waste_types_description": [
+      "Hazardous Waste",
+      "Solid Waste",
+      "Medical Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "triumvirateenvironmental.com",
+        "triumvirateenvironmentalvt.com",
+        "triumvirateenvironmentalvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "missing",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0437"
+  },
+  {
+    "permit_id": "2640",
+    "company": "VR Logistics Services, LLC",
+    "contact": "Joshua Capraro",
+    "address": "133 Boston Post Road",
+    "town": "Weston",
+    "state": "MA",
+    "phone": "9784377509",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.3715608,
+    "lng": -71.278136,
+    "geocoded_address": "133, Boston Post Road, Weston, Middlesex County, Massachusetts, 02493, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(978) 437-7509",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "vrlogisticsservices.com",
+        "vrlogisticsservicesvt.com",
+        "vrlogisticsservicesvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0438"
+  },
+  {
+    "permit_id": "2641",
+    "company": "W. Carrera Soil Management Corp",
+    "contact": "Bruna Martins",
+    "address": "132 Whittemore Street",
+    "town": "Tewksbury",
+    "state": "MA",
+    "phone": "9786087899",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.6133107,
+    "lng": -71.1965043,
+    "geocoded_address": "132, Whittemore Street, Tewksbury, Middlesex County, Massachusetts, 01876, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(978) 608-7899",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "wcarrerasoilmanagementcorp.com",
+        "wcarrerasoilmanagementcorpvt.com",
+        "wcarrerasoilmanagementcorpvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0439"
+  },
+  {
+    "permit_id": "859",
+    "company": "W.C. Gurrisi &amp; Sons, Inc.",
+    "contact": "Linda Vining",
+    "address": "0 Corwin Street",
+    "town": "Peabody",
+    "state": "MA",
+    "phone": "9788186248",
+    "permit_year": "2025",
+    "waste_types": "S",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.5186927,
+    "lng": -70.9596823,
+    "geocoded_address": "Corwin Street, Peabody, Essex County, Massachusetts, 01960, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(978) 818-6248",
+    "waste_types_description": [
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "wcgurrisiampsons.com",
+        "wcgurrisiampsonsvt.com",
+        "wcgurrisiampsonsvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0440"
+  },
+  {
+    "permit_id": "844",
+    "company": "W.L. French Excavating Corporation",
+    "contact": "Mark Sargent or Diarmuid Gallagher",
+    "address": "14 Sterling Road",
+    "town": "Billerica",
+    "state": "MA",
+    "phone": "9786632623",
+    "permit_year": "2025",
+    "waste_types": "SR",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.565394,
+    "lng": -71.3037951,
+    "geocoded_address": "14, Sterling Road, Billerica, Middlesex County, Massachusetts, 01862, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(978) 663-2623",
+    "waste_types_description": [
+      "Solid Waste",
+      "Recyclables"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "wlfrenchexcavatingcorporation.com",
+        "wlfrenchexcavatingcorporationvt.com",
+        "wlfrenchexcavatingcorporationvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0441"
+  },
+  {
+    "permit_id": "548",
+    "company": "Whitney Trucking, Inc.",
+    "contact": "Dan Whitney/Michele",
+    "address": "576 Pine Meadow Road",
+    "town": "Northfield",
+    "state": "MA",
+    "phone": "4134985591",
+    "permit_year": "2025",
+    "waste_types": "RS",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "lat": 42.6370891,
+    "lng": -72.4820606,
+    "geocoded_address": "576, Pine Meadow Road, Gill Station, Northfield, Franklin County, Massachusetts, 01354, United States",
+    "geocode_confidence": "medium",
+    "phone_formatted": "(413) 498-5591",
+    "waste_types_description": [
+      "Recyclables",
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "whitneytrucking.com",
+        "whitneytruckingvt.com",
+        "whitneytruckingvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "approximate",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0442"
+  },
+  {
+    "permit_id": "1083",
+    "company": "Wind River Environmental LLC",
+    "contact": "Steve LaPorte",
+    "address": "46 Lizotte Drive, Suite 1000",
+    "town": "Marlborough",
+    "state": "MA",
+    "phone": "6177749098",
+    "permit_year": "2025",
+    "waste_types": "RS",
+    "bear_resistant": "No",
+    "service_area": "&nbsp;",
+    "geocode_failed": true,
+    "phone_formatted": "(617) 774-9098",
+    "waste_types_description": [
+      "Recyclables",
+      "Solid Waste"
+    ],
+    "website_data": {
+      "possible_domains": [
+        "windriverenvironmental.com",
+        "windriverenvironmentalvt.com",
+        "windriverenvironmentalvermont.com"
+      ],
+      "verified": false,
+      "method": "pattern_guess"
+    },
+    "location_quality": "missing",
+    "data_source": "MA",
+    "data_quality": "cross_reference_only",
+    "state_source": "MA",
+    "northeast_id": "NE-0443"
+  }
+]
