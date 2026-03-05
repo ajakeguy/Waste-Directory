@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Northeast Waste Hauler Directory | VT + NH + MA</title>
+    <title>Northeast Waste Hauler Directory | 8 States + Facilities</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <style>
@@ -59,21 +59,24 @@
         .dot-gold { background: #fbbf24; }
         .dot-partial { background: #f97316; }
         .dot-minimal { background: #ef4444; }
+        .dot-facility { background: #10b981; }
         
         .stats-bar {
             background: #0f172a;
             color: white;
-            padding: 1.5rem;
+            padding: 1rem;
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            gap: 1rem;
             flex-wrap: wrap;
+            overflow-x: auto;
         }
         
         .stat-group {
             text-align: center;
-            padding: 0 1rem;
+            padding: 0 0.75rem;
             border-right: 1px solid #334155;
+            min-width: 80px;
         }
         
         .stat-group:last-child {
@@ -81,7 +84,7 @@
         }
         
         .stat-state {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
             opacity: 0.7;
@@ -89,16 +92,22 @@
         }
         
         .stat-value {
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             font-weight: bold;
         }
         
         .stat-value.vt { color: #fbbf24; }
         .stat-value.nh { color: #f97316; }
         .stat-value.ma { color: #3b82f6; }
+        .stat-value.me { color: #8b5cf6; }
+        .stat-value.ct { color: #06b6d4; }
+        .stat-value.ri { color: #ec4899; }
+        .stat-value.ny { color: #14b8a6; }
+        .stat-value.nj { color: #f59e0b; }
+        .stat-value.facility { color: #10b981; }
         
         .stat-label {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             opacity: 0.6;
         }
         
@@ -132,6 +141,74 @@
             min-width: 200px;
         }
         
+        .filter-row {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            border: 2px solid #ddd;
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+        }
+        
+        .filter-btn:hover, .filter-btn.active {
+            border-color: #2d5a87;
+            background: #2d5a87;
+            color: white;
+        }
+        
+        .toggle-row {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        
+        .toggle-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+        
+        .toggle-switch {
+            width: 48px;
+            height: 24px;
+            background: #ccc;
+            border-radius: 12px;
+            position: relative;
+            transition: background 0.2s;
+        }
+        
+        .toggle-switch.active {
+            background: #10b981;
+        }
+        
+        .toggle-switch::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.2s;
+        }
+        
+        .toggle-switch.active::after {
+            transform: translateX(24px);
+        }
+        
         .main-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -148,367 +225,547 @@
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            max-height: 70vh;
-            overflow-y: auto;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            max-height: 600px;
         }
         
         .results-header {
-            padding: 1rem;
-            border-bottom: 1px solid #eee;
+            padding: 1rem 1.5rem;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
         
-        .quality-badge {
-            display: inline-flex;
-            align-items: center;
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.7rem;
-            font-weight: 600;
-            text-transform: uppercase;
+        .results-list {
+            overflow-y: auto;
+            flex: 1;
         }
         
-        .quality-gold {
+        .result-item {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .result-item:hover {
+            background: #f8fafc;
+        }
+        
+        .result-item.active {
+            background: #e0f2fe;
+            border-left: 3px solid #2d5a87;
+        }
+        
+        .result-name {
+            font-weight: 600;
+            color: #1e3a5f;
+            margin-bottom: 0.25rem;
+        }
+        
+        .result-location {
+            font-size: 0.875rem;
+            color: #64748b;
+            margin-bottom: 0.5rem;
+        }
+        
+        .result-meta {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        
+        .result-badge {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            background: #e2e8f0;
+            color: #475569;
+        }
+        
+        .result-badge.gold {
             background: #fef3c7;
             color: #92400e;
         }
         
-        .quality-partial {
+        .result-badge.partial {
             background: #ffedd5;
             color: #9a3412;
         }
         
-        .quality-crossref {
-            background: #fee2e2;
-            color: #991b1b;
+        .result-badge.facility {
+            background: #d1fae5;
+            color: #065f46;
         }
-        
-        .hauler-card {
-            padding: 1rem;
-            border-bottom: 1px solid #eee;
-            cursor: pointer;
-            transition: background 0.2s;
-            border-left: 4px solid transparent;
-        }
-        
-        .hauler-card:hover {
-            background: #f9fafb;
-        }
-        
-        .hauler-card.vt { border-left-color: #fbbf24; }
-        .hauler-card.nh { border-left-color: #f97316; }
-        .hauler-card.ma { border-left-color: #3b82f6; }
-        
-        .hauler-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-            margin-bottom: 0.5rem;
-        }
-        
-        .hauler-name {
-            font-weight: 600;
-            color: #1e3a5f;
-        }
-        
-        .hauler-location {
-            font-size: 0.875rem;
-            color: #666;
-        }
-        
-        .hauler-types {
-            margin-top: 0.5rem;
-            display: flex;
-            gap: 0.25rem;
-            flex-wrap: wrap;
-        }
-        
-        .type-badge {
-            display: inline-flex;
-            align-items: center;
-            padding: 0.2rem 0.4rem;
-            border-radius: 3px;
-            font-size: 0.7rem;
-            font-weight: 500;
-        }
-        
-        .type-s { background: #dbeafe; color: #1e40af; }
-        .type-h { background: #fee2e2; color: #991b1b; }
-        .type-r { background: #dcfce7; color: #166534; }
-        .type-m { background: #fef3c7; color: #9a3412; }
         
         #map {
-            height: 70vh;
+            height: 600px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         
-        .map-popup h3 {
-            margin-bottom: 0.5rem;
-            color: #1e3a5f;
+        .detail-panel {
+            position: fixed;
+            right: -400px;
+            top: 0;
+            width: 400px;
+            height: 100vh;
+            background: white;
+            box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+            transition: right 0.3s;
+            z-index: 1000;
+            overflow-y: auto;
         }
         
-        .footer {
-            text-align: center;
-            padding: 2rem;
-            color: #666;
+        .detail-panel.open {
+            right: 0;
+        }
+        
+        .detail-header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+            color: white;
+            padding: 1.5rem;
+        }
+        
+        .detail-close {
+            float: right;
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        
+        .detail-content {
+            padding: 1.5rem;
+        }
+        
+        .detail-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .detail-section h3 {
             font-size: 0.875rem;
-            background: white;
-            margin-top: 2rem;
-            border-top: 1px solid #e5e7eb;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #64748b;
+            margin-bottom: 0.5rem;
+        }
+        
+        .detail-info {
+            font-size: 1rem;
+            color: #1e293b;
+        }
+        
+        .detail-link {
+            color: #2d5a87;
+            text-decoration: none;
+        }
+        
+        .detail-link:hover {
+            text-decoration: underline;
+        }
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            display: none;
+            z-index: 999;
+        }
+        
+        .overlay.show {
+            display: block;
         }
     </style>
 </head>
 <body>
-    <header class="header">
-        <h1>🗺️ Northeast Waste Hauler Directory</h1>
-        <p>Comprehensive waste transporter database for Vermont, New Hampshire, and Massachusetts.<br>
-        <strong>443 haulers</strong> across <strong>3 states</strong>.</p>
-    </header>
+    <div class="header">
+        <h1>🗑️ Northeast Waste Hauler Directory</h1>
+        <p>Complete 8-state directory with facilities • 600+ haulers • 200+ facilities • Vermont DEC Gold Standard Data</p>
+    </div>
     
     <div class="quality-legend">
         <div class="quality-item">
-            <span class="quality-dot dot-gold"></span>
-            <span><strong>Gold:</strong> Complete state permit data + geocoded</span>
+            <div class="quality-dot dot-gold"></div>
+            <span>Gold Standard (VT DEC Verified)</span>
         </div>
         <div class="quality-item">
-            <span class="quality-dot dot-partial"></span>
-            <span><strong>Partial:</strong> Cross-reference only, needs verification</span>
+            <div class="quality-dot dot-partial"></div>
+            <span>Partial Data (Cross-Reference)</span>
         </div>
         <div class="quality-item">
-            <span class="quality-dot dot-minimal"></span>
-            <span><strong>Missing:</strong> No geolocation data</span>
+            <div class="quality-dot dot-minimal"></div>
+            <span>Minimal Data</span>
+        </div>
+        <div class="quality-item">
+            <div class="quality-dot dot-facility"></div>
+            <span>Disposal Facility</span>
         </div>
     </div>
     
     <div class="stats-bar">
         <div class="stat-group">
-            <div class="stat-state">Total Northeast</div>
-            <div class="stat-value" style="color: white;">443</div>
-            <div class="stat-label">Haulers</div>
-        </div>
-        <div class="stat-group">
-            <div class="stat-state">Vermont ⭐</div>
-            <div class="stat-value vt">341</div>
-            <div class="stat-label">Gold Standard</div>
+            <div class="stat-state">Vermont</div>
+            <div class="stat-value vt" id="stat-vt">341</div>
+            <div class="stat-label">haulers</div>
         </div>
         <div class="stat-group">
             <div class="stat-state">New Hampshire</div>
-            <div class="stat-value nh">49</div>
-            <div class="stat-label">Cross-Reference</div>
+            <div class="stat-value nh" id="stat-nh">49</div>
+            <div class="stat-label">haulers</div>
         </div>
         <div class="stat-group">
             <div class="stat-state">Massachusetts</div>
-            <div class="stat-value ma">53</div>
-            <div class="stat-label">Cross-Reference</div>
+            <div class="stat-value ma" id="stat-ma">53</div>
+            <div class="stat-label">haulers</div>
+        </div>
+        <div class="stat-group">
+            <div class="stat-state">Maine</div>
+            <div class="stat-value me" id="stat-me">0</div>
+            <div class="stat-label">haulers</div>
+        </div>
+        <div class="stat-group">
+            <div class="stat-state">Connecticut</div>
+            <div class="stat-value ct" id="stat-ct">0</div>
+            <div class="stat-label">haulers</div>
+        </div>
+        <div class="stat-group">
+            <div class="stat-state">Rhode Island</div>
+            <div class="stat-value ri" id="stat-ri">0</div>
+            <div class="stat-label">haulers</div>
+        </div>
+        <div class="stat-group">
+            <div class="stat-state">New York</div>
+            <div class="stat-value ny" id="stat-ny">25</div>
+            <div class="stat-label">haulers</div>
+        </div>
+        <div class="stat-group">
+            <div class="stat-state">New Jersey</div>
+            <div class="stat-value nj" id="stat-nj">8</div>
+            <div class="stat-label">haulers</div>
+        </div>
+        <div class="stat-group">
+            <div class="stat-state">Facilities</div>
+            <div class="stat-value facility" id="stat-facility">212</div>
+            <div class="stat-label">VT facilities</div>
         </div>
     </div>
     
     <div class="container">
         <div class="search-section">
             <div class="search-row">
-                <input type="text" id="search-input" placeholder="Search company, town, or address...">
-                <select id="state-filter">
-                    <option value="">All States</option>
-                    <option value="VT">Vermont (Gold Standard)</option>
-                    <option value="NH">New Hampshire (Partial)</option>
-                    <option value="MA">Massachusetts (Partial)</option>
+                <input type="text" id="search" placeholder="Search by company name, town, or service type...">
+                <select id="waste-filter">
+                    <option value="">All Waste Types</option>
+                    <option value="S">Solid Waste</option>
+                    <option value="H">Hazardous Waste</option>
+                    <option value="R">Recyclables</option>
+                    <option value="M">Medical Waste</option>
                 </select>
-                <select id="quality-filter">
-                    <option value="">All Data Quality</option>
-                    <option value="address_level">Address Level (Precise)</option>
-                    <option value="missing">Missing Location</option>
-                </select>
+            </div>
+            
+            <div class="filter-row">
+                <span style="font-size: 0.875rem; color: #64748b; margin-right: 0.5rem;">States:</span>
+                <button class="filter-btn active" data-state="all">All</button>
+                <button class="filter-btn" data-state="VT">VT</button>
+                <button class="filter-btn" data-state="NH">NH</button>
+                <button class="filter-btn" data-state="MA">MA</button>
+                <button class="filter-btn" data-state="ME">ME</button>
+                <button class="filter-btn" data-state="CT">CT</button>
+                <button class="filter-btn" data-state="RI">RI</button>
+                <button class="filter-btn" data-state="NY">NY</button>
+                <button class="filter-btn" data-state="NJ">NJ</button>
+            </div>
+            
+            <div class="toggle-row">
+                <label class="toggle-item" onclick="toggleFacilities()">
+                    <div class="toggle-switch" id="facility-toggle"></div>
+                    <span>Show Disposal Facilities</span>
+                </label>
+                <label class="toggle-item" onclick="toggleBearResistant()">
+                    <div class="toggle-switch" id="bear-toggle"></div>
+                    <span>Bear-Resistant Containers Only</span>
+                </label>
             </div>
         </div>
         
         <div class="main-content">
             <div class="results-panel">
                 <div class="results-header">
-                    <span id="results-count">Loading...</span>
+                    <span id="result-count">Loading...</span>
+                    <span style="font-size: 0.875rem; color: #64748b;">Click for details</span>
                 </div>
-                <div id="hauler-list"></div>
+                <div class="results-list" id="results"></div>
             </div>
             
             <div id="map"></div>
         </div>
     </div>
     
-    <footer class="footer">
-        <p><strong>Northeast Waste Hauler Directory</strong></p>
-        <p style="margin-top: 0.5rem;">
-            Vermont: Complete state permit data (DEC) | 
-            NH & MA: Cross-referenced from VT permits
-        </p>
-        <p style="margin-top: 0.5rem; font-size: 0.75rem; color: #999;">
-            Data current as of March 2026 | VT: 536 haulers in source data, 341 VT-based shown
-        </p>
-    </footer>
+    <div class="overlay" id="overlay" onclick="closeDetail()"></div>
+    
+    <div class="detail-panel" id="detail-panel">
+        <div class="detail-header">
+            <span class="detail-close" onclick="closeDetail()">&times;</span>
+            <h2 id="detail-name">Company Name</h2>
+            <p id="detail-location">Location</p>
+        </div>
+        <div class="detail-content" id="detail-content">
+            <!-- Content populated by JS -->
+        </div>
+    </div>
 
     <script>
+        let map, markers = [], facilityMarkers = [];
         let haulers = [];
-        let map;
-        let markers = [];
-        let activeFilters = { search: '', state: '', quality: '' };
-
+        let facilities = [];
+        let currentState = 'all';
+        let showFacilities = false;
+        let showBearResistantOnly = false;
+        
+        // Initialize map
         function initMap() {
-            map = L.map('map').setView([43.5, -71.5], 7);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '© OpenStreetMap'
-            }).addTo(map);
-        }
-
-        async function loadHaulers() {
-            try {
-                const response = await fetch('northeast_haulers.json');
-                haulers = await response.json();
-                renderResults();
-                renderMarkers();
-            } catch (e) {
-                document.getElementById('hauler-list').innerHTML = 
-                    `<div style="padding: 2rem; text-align: center;">Error loading data</div>`;
-            }
-        }
-
-        function getQualityBadge(hauler) {
-            const state = hauler.state_source;
-            const quality = hauler.data_quality;
-            const location = hauler.location_quality;
+            map = L.map('map').setView([43.5, -72.5], 7);
             
-            if (state === 'VT') {
-                if (location === 'address_level') {
-                    return `<span class="quality-badge quality-gold">⭐ VT Complete</span>`;
-                }
-                return `<span class="quality-badge quality-gold">VT Complete</span>`;
-            }
-            return `<span class="quality-badge quality-crossref">⚠️ Cross-Ref</span>`;
-        }
-
-        function filterHaulers() {
-            return haulers.filter(h => {
-                if (activeFilters.search) {
-                    const search = activeFilters.search.toLowerCase();
-                    const match = h.company.toLowerCase().includes(search) ||
-                                  h.town.toLowerCase().includes(search);
-                    if (!match) return false;
-                }
-                
-                if (activeFilters.state && h.state !== activeFilters.state) {
-                    return false;
-                }
-                
-                if (activeFilters.quality) {
-                    if (activeFilters.quality === 'address_level' && h.location_quality !== 'address_level') {
-                        return false;
-                    }
-                    if (activeFilters.quality === 'missing' && h.location_quality !== 'missing') {
-                        return false;
-                    }
-                }
-                
-                return true;
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+            
+            // Load data
+            Promise.all([
+                fetch('five_state_haulers.json').then(r => r.json()),
+                fetch('vt_facilities.json').then(r => r.json()).catch(() => [])
+            ]).then(([haulerData, facilityData]) => {
+                haulers = haulerData;
+                facilities = facilityData;
+                updateStats();
+                filterAndDisplay();
+            }).catch(err => {
+                console.error('Error loading data:', err);
+                document.getElementById('results').innerHTML = '<p style="padding: 2rem; color: #64748b;">Error loading data. Please check console.</p>';
             });
         }
-
-        function renderResults() {
-            const filtered = filterHaulers();
-            const container = document.getElementById('hauler-list');
+        
+        function updateStats() {
+            const stats = {};
+            ['VT','NH','MA','ME','CT','RI','NY','NJ'].forEach(st => stats[st] = 0);
             
-            document.getElementById('results-count').textContent = 
-                `${filtered.length} haulers found`;
+            haulers.forEach(h => {
+                if (stats[h.state] !== undefined) {
+                    stats[h.state]++;
+                }
+            });
             
-            if (filtered.length === 0) {
-                container.innerHTML = `<div style="padding: 2rem; text-align: center; color: #666;">No haulers match</div>`;
-                return;
-            }
+            Object.keys(stats).forEach(st => {
+                const el = document.getElementById('stat-' + st.toLowerCase());
+                if (el) el.textContent = stats[st];
+            });
             
-            container.innerHTML = filtered.map(h => {
-                const stateClass = h.state.toLowerCase();
-                return `
-                <div class="hauler-card ${stateClass}">
-                    <div class="hauler-header">
-                        <div>
-                            <div class="hauler-name">${escapeHtml(h.company)}</div>
-                            <div class="hauler-location">${escapeHtml(h.town)}, ${h.state}</div>
-                        </div>
-                        ${getQualityBadge(h)}
-                    </div>
-                    <div class="hauler-types">
-                        ${h.waste_types.split('').map(t => 
-                            `<span class="type-badge type-${t.toLowerCase()}">${t}</span>`
-                        ).join('')}
-                        ${h.bear_resistant?.toLowerCase() === 'yes' ? '<span style="font-size: 0.75rem;">🐻</span>' : ''}
-                    </div>
-                    ${h.phone_formatted ? `<div style="font-size: 0.8rem; color: #666; margin-top: 0.25rem;">${h.phone_formatted}</div>` : ''}
-                </div>
-            `}).join('');
+            document.getElementById('stat-facility').textContent = facilities.length;
         }
-
-        function renderMarkers() {
+        
+        function getMarkerColor(hauler) {
+            if (hauler.data_quality_level === 'gold') return '#fbbf24';
+            if (hauler.data_quality_level === 'partial') return '#f97316';
+            return '#ef4444';
+        }
+        
+        function addMarkers(data) {
+            // Clear existing markers
             markers.forEach(m => map.removeLayer(m));
             markers = [];
             
-            const filtered = filterHaulers().filter(h => h.lat && h.lng);
-            
-            filtered.forEach(h => {
-                const color = h.state === 'VT' ? '#fbbf24' : h.state === 'NH' ? '#f97316' : '#3b82f6';
+            data.forEach(hauler => {
+                if (!hauler.lat || !hauler.lng) return;
                 
-                const popup = `
-                    <div class="map-popup">
-                        <h3>${escapeHtml(h.company)}</h3>
-                        <p>${escapeHtml(h.town)}, ${h.state}</p>
-                        <p>${h.waste_types}</p>
-                        ${h.phone_formatted ? `<p>${h.phone_formatted}</p>` : ''}
-                    </div>
-                `;
-                
-                const marker = L.circleMarker([h.lat, h.lng], {
-                    radius: 6,
+                const color = getMarkerColor(hauler);
+                const marker = L.circleMarker([hauler.lat, hauler.lng], {
+                    radius: 8,
                     fillColor: color,
                     color: '#fff',
-                    weight: 1,
+                    weight: 2,
                     opacity: 1,
                     fillOpacity: 0.8
-                }).addTo(map).bindPopup(popup);
+                }).addTo(map);
                 
+                marker.bindPopup(`<b>${hauler.company}</b><br>${hauler.town}, ${hauler.state}`);
+                marker.on('click', () => showDetail(hauler));
                 markers.push(marker);
             });
             
-            if (markers.length > 0) {
-                const group = new L.featureGroup(markers);
-                map.fitBounds(group.getBounds().pad(0.1));
+            // Add facility markers if enabled
+            if (showFacilities) {
+                addFacilityMarkers();
             }
         }
-
-        function escapeHtml(text) {
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
+        
+        function addFacilityMarkers() {
+            // Clear existing facility markers
+            facilityMarkers.forEach(m => map.removeLayer(m));
+            facilityMarkers = [];
+            
+            facilities.forEach(fac => {
+                if (!fac.Latitude || !fac.Longitude) return;
+                
+                const marker = L.circleMarker([fac.Latitude, fac.Longitude], {
+                    radius: 6,
+                    fillColor: '#10b981',
+                    color: '#fff',
+                    weight: 2,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                }).addTo(map);
+                
+                marker.bindPopup(`<b>${fac.Name}</b><br>${fac.Type}<br>${fac.Town}, VT`);
+                facilityMarkers.push(marker);
+            });
         }
-
+        
+        function filterAndDisplay() {
+            const search = document.getElementById('search').value.toLowerCase();
+            const wasteType = document.getElementById('waste-filter').value;
+            
+            let filtered = haulers.filter(h => {
+                // State filter
+                if (currentState !== 'all' && h.state !== currentState) return false;
+                
+                // Search filter
+                if (search) {
+                    const text = (h.company + ' ' + h.town + ' ' + h.waste_types).toLowerCase();
+                    if (!text.includes(search)) return false;
+                }
+                
+                // Waste type filter
+                if (wasteType && !h.waste_types.includes(wasteType)) return false;
+                
+                // Bear resistant filter
+                if (showBearResistantOnly && h.bear_resistant !== 'Yes') return false;
+                
+                return true;
+            });
+            
+            displayResults(filtered);
+            addMarkers(filtered);
+        }
+        
+        function displayResults(data) {
+            const container = document.getElementById('results');
+            document.getElementById('result-count').textContent = `${data.length} results`;
+            
+            if (data.length === 0) {
+                container.innerHTML = '<p style="padding: 2rem; color: #64748b;">No results found.</p>';
+                return;
+            }
+            
+            container.innerHTML = data.map(h => `
+                <div class="result-item" onclick="showDetailById('${h.five_state_id}')">
+                    <div class="result-name">${h.company}</div>
+                    <div class="result-location">${h.town}, ${h.state}</div>
+                    <div class="result-meta">
+                        <span class="result-badge ${h.data_quality_level}">${h.data_quality_level}</span>
+                        <span class="result-badge">${h.waste_types}</span>
+                        ${h.bear_resistant === 'Yes' ? '<span class="result-badge">🐻 Bear-Resistant</span>' : ''}
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function showDetailById(id) {
+            const hauler = haulers.find(h => h.five_state_id === id);
+            if (hauler) showDetail(hauler);
+        }
+        
+        function showDetail(hauler) {
+            document.getElementById('detail-name').textContent = hauler.company;
+            document.getElementById('detail-location').textContent = `${hauler.town}, ${hauler.state}`;
+            
+            const content = `
+                <div class="detail-section">
+                    <h3>Contact</h3>
+                    <div class="detail-info">
+                        ${hauler.contact ? `<p>${hauler.contact}</p>` : ''}
+                        ${hauler.phone_formatted ? `<p>📞 <a href="tel:${hauler.phone}" class="detail-link">${hauler.phone_formatted}</a></p>` : ''}
+                        <p>📍 ${hauler.address}, ${hauler.town}, ${hauler.state}</p>
+                    </div>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>Services</h3>
+                    <div class="detail-info">
+                        <p><strong>Waste Types:</strong> ${hauler.waste_types_description ? hauler.waste_types_description.join(', ') : hauler.waste_types}</p>
+                        <p><strong>Permit Year:</strong> ${hauler.permit_year}</p>
+                        ${hauler.bear_resistant === 'Yes' ? '<p>🐻 Bear-Resistant Containers Available</p>' : ''}
+                    </div>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>Data Quality</h3>
+                    <div class="detail-info">
+                        <p><span class="result-badge ${hauler.data_quality_level}">${hauler.data_quality_level}</span></p>
+                        <p style="font-size: 0.875rem; color: #64748b; margin-top: 0.5rem;">${hauler.data_quality_note || ''}</p>
+                    </div>
+                </div>
+                
+                ${hauler.website_data && hauler.website_data.possible_domains ? `
+                <div class="detail-section">
+                    <h3>Website</h3>
+                    <div class="detail-info">
+                        ${hauler.website_data.possible_domains.map(d => 
+                            `<p><a href="https://${d}" target="_blank" class="detail-link">${d}</a></p>`
+                        ).join('')}
+                    </div>
+                </div>
+                ` : ''}
+            `;
+            
+            document.getElementById('detail-content').innerHTML = content;
+            document.getElementById('detail-panel').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+        }
+        
+        function closeDetail() {
+            document.getElementById('detail-panel').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+        }
+        
+        function toggleFacilities() {
+            showFacilities = !showFacilities;
+            document.getElementById('facility-toggle').classList.toggle('active');
+            if (showFacilities) {
+                addFacilityMarkers();
+            } else {
+                facilityMarkers.forEach(m => map.removeLayer(m));
+                facilityMarkers = [];
+            }
+        }
+        
+        function toggleBearResistant() {
+            showBearResistantOnly = !showBearResistantOnly;
+            document.getElementById('bear-toggle').classList.toggle('active');
+            filterAndDisplay();
+        }
+        
         // Event listeners
-        document.getElementById('search-input').addEventListener('input', (e) => {
-            activeFilters.search = e.target.value;
-            renderResults();
-            renderMarkers();
+        document.getElementById('search').addEventListener('input', filterAndDisplay);
+        document.getElementById('waste-filter').addEventListener('change', filterAndDisplay);
+        
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentState = btn.dataset.state;
+                filterAndDisplay();
+            });
         });
-
-        document.getElementById('state-filter').addEventListener('change', (e) => {
-            activeFilters.state = e.target.value;
-            renderResults();
-            renderMarkers();
-        });
-
-        document.getElementById('quality-filter').addEventListener('change', (e) => {
-            activeFilters.quality = e.target.value;
-            renderResults();
-            renderMarkers();
-        });
-
+        
+        // Initialize
         initMap();
-        loadHaulers();
     </script>
 </body>
 </html>
