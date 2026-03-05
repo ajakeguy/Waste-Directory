@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Directory Project | Overview</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #1e40af 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            padding: 2rem;
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            flex-wrap: wrap;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1e40af;
+        }
+        
+        .stat-label {
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.875rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section h2 {
+            color: #0f172a;
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .card h3 {
+            color: #1e40af;
+            margin-bottom: 0.75rem;
+        }
+        
+        .card p {
+            color: #64748b;
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #1e40af;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        
+        .btn:hover {
+            background: #1e3a8a;
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #1e40af;
+            border: 2px solid #1e40af;
+        }
+        
+        .btn-secondary:hover {
+            background: #eff6ff;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .status-complete {
+            background: #dcfce7;
+            color: #166534;
+        }
+        
+        .status-partial {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        
+        .status-seed {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .data-table th,
+        .data-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .data-table th {
+            background: #f8fafc;
+            font-weight: 600;
+            color: #475569;
+        }
+        
+        .data-table tr:hover {
+            background: #f8fafc;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: #0f172a;
+            color: white;
+            margin-top: 4rem;
+        }
+        
+        .quality-legend {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>🗑️ Waste Industry Directory</h1>
+        <p>Northeast haulers & disposal facilities across 5 states.<br>
+        Vermont gold standard + multi-state expansion.</p>
+    </header>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-number">476</div>
+            <div class="stat-label">Haulers</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">10</div>
+            <div class="stat-label">Confirmed Facilities</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">5</div>
+            <div class="stat-label">States</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">200</div>
+            <div class="stat-label">Facilities to Find</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <section class="section">
+            <h2>📍 View the Data</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>5-State Hauler Directory</h3>
+                    <p>Complete multi-state interface with quality indicators. Vermont (gold) + NH, MA, NY, NJ (cross-reference).</p>
+                    <span class="status-badge status-complete">Complete</span><br><br>
+                    <a href="northeast.html" class="btn">View Directory</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Vermont-Only Directory</h3>
+                    <p>Gold standard dataset with 341 VT haulers. Fully geocoded with detailed profiles.</p>
+                    <span class="status-badge status-complete">Gold Standard</span><br><br>
+                    <a href="index.html" class="btn btn-secondary">View VT Only</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Facility Framework</h3>
+                    <p>10 confirmed facilities + research roadmap. 200 more to identify in Vermont.</p>
+                    <span class="status-badge status-seed">Seed Data</span><br><br>
+                    <a href="vt_facilities_seed.json" class="btn btn-secondary">View JSON</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>📊 Data Quality by State</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>State</th>
+                        <th>Haulers</th>
+                        <th>Facilities</th>
+                        <th>Data Quality</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Vermont</strong></td>
+                        <td>341</td>
+                        <td>10 confirmed</td>
+                        <td>⭐ Gold Standard</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>New Hampshire</strong></td>
+                        <td>49</td>
+                        <td>4 in hauler data</td>
+                        <td>⚠️ Cross-Reference</td>
+                        <td><span class="status-badge status-partial">Partial</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Massachusetts</strong></td>
+                        <td>53</td>
+                        <td>3 in hauler data</td>
+                        <td>⚠️ Cross-Reference</td>
+                        <td><span class="status-badge status-partial">Partial</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>New York</strong></td>
+                        <td>25</td>
+                        <td>1 in hauler data</td>
+                        <td>⚠️ Cross-Reference</td>
+                        <td><span class="status-badge status-partial">Partial</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>New Jersey</strong></td>
+                        <td>8</td>
+                        <td>0 in hauler data</td>
+                        <td>⚠️ Cross-Reference</td>
+                        <td><span class="status-badge status-partial">Partial</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="quality-legend">
+                <div class="legend-item">
+                    <span class="status-badge status-complete">Complete</span>
+                    <span>Full state permit database</span>
+                </div>
+                <div class="legend-item">
+                    <span class="status-badge status-partial">Partial</span>
+                    <span>Cross-reference data</span>
+                </div>
+                <div class="legend-item">
+                    <span class="status-badge status-seed">Seed</span>
+                    <span>Framework only</span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>📁 Project Files</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>File</th>
+                        <th>Description</th>
+                        <th>Size</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>northeast.html</code></td>
+                        <td>5-state hauler directory interface</td>
+                        <td>Web App</td>
+                    </tr>
+                    <tr>
+                        <td><code>five_state_haulers.json</code></td>
+                        <td>Complete 476 hauler dataset</td>
+                        <td>~500 KB</td>
+                    </tr>
+                    <tr>
+                        <td><code>vt_facilities_seed.json</code></td>
+                        <td>10 confirmed facilities + roadmap</td>
+                        <td>~5 KB</td>
+                    </tr>
+                    <tr>
+                        <td><code>index.html</code></td>
+                        <td>Vermont-only directory</td>
+                        <td>Web App</td>
+                    </tr>
+                    <tr>
+                        <td><code>FACILITIES_STATUS.md</code></td>
+                        <td>Facility research status report</td>
+                        <td>Documentation</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section class="section">
+            <h2>🎯 Next Steps</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Expand Facilities</h3>
+                    <p>Research remaining 200 VT facilities via town websites and VT DEC records request.</p>
+                </div>
+                <div class="card">
+                    <h3>Enrich Data</h3>
+                    <p>Add websites, reviews, hours, photos to existing hauler profiles.</p>
+                </div>
+                <div class="card">
+                    <h3>Geocode Remainder</h3>
+                    <p>Resolve 224 missing addresses (mostly PO boxes, out-of-state).</p>
+                </div>
+                <div class="card">
+                    <h3>Add States</h3>
+                    <p>Expand to Maine, Connecticut, Rhode Island when data available.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <p><strong>Waste Industry Directory Project</strong></p>
+        <p style="margin-top: 0.5rem; opacity: 0.8;">
+            Built March 2026 | Data sources: VT DEC, EPA, State cross-references
+        </p>
+        <p style="margin-top: 1rem; font-size: 0.875rem; opacity: 0.6;">
+            476 haulers across 5 states | 10 confirmed facilities | Gold standard: Vermont
+        </p>
+    </footer>
+</body>
+</html>

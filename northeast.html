@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northeast Waste Hauler Directory | VT + NH + MA</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .quality-legend {
+            background: #1e293b;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            font-size: 0.875rem;
+        }
+        
+        .quality-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .quality-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .dot-gold { background: #fbbf24; }
+        .dot-partial { background: #f97316; }
+        .dot-minimal { background: #ef4444; }
+        
+        .stats-bar {
+            background: #0f172a;
+            color: white;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .stat-group {
+            text-align: center;
+            padding: 0 1rem;
+            border-right: 1px solid #334155;
+        }
+        
+        .stat-group:last-child {
+            border-right: none;
+        }
+        
+        .stat-state {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            opacity: 0.7;
+            margin-bottom: 0.25rem;
+        }
+        
+        .stat-value {
+            font-size: 1.75rem;
+            font-weight: bold;
+        }
+        
+        .stat-value.vt { color: #fbbf24; }
+        .stat-value.nh { color: #f97316; }
+        .stat-value.ma { color: #3b82f6; }
+        
+        .stat-label {
+            font-size: 0.75rem;
+            opacity: 0.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        
+        .search-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .search-row {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+        
+        input, select {
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        @media (max-width: 900px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .results-panel {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+        
+        .results-header {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .quality-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .quality-gold {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        
+        .quality-partial {
+            background: #ffedd5;
+            color: #9a3412;
+        }
+        
+        .quality-crossref {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        
+        .hauler-card {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: background 0.2s;
+            border-left: 4px solid transparent;
+        }
+        
+        .hauler-card:hover {
+            background: #f9fafb;
+        }
+        
+        .hauler-card.vt { border-left-color: #fbbf24; }
+        .hauler-card.nh { border-left-color: #f97316; }
+        .hauler-card.ma { border-left-color: #3b82f6; }
+        
+        .hauler-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 0.5rem;
+        }
+        
+        .hauler-name {
+            font-weight: 600;
+            color: #1e3a5f;
+        }
+        
+        .hauler-location {
+            font-size: 0.875rem;
+            color: #666;
+        }
+        
+        .hauler-types {
+            margin-top: 0.5rem;
+            display: flex;
+            gap: 0.25rem;
+            flex-wrap: wrap;
+        }
+        
+        .type-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+        
+        .type-s { background: #dbeafe; color: #1e40af; }
+        .type-h { background: #fee2e2; color: #991b1b; }
+        .type-r { background: #dcfce7; color: #166534; }
+        .type-m { background: #fef3c7; color: #9a3412; }
+        
+        #map {
+            height: 70vh;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .map-popup h3 {
+            margin-bottom: 0.5rem;
+            color: #1e3a5f;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.875rem;
+            background: white;
+            margin-top: 2rem;
+            border-top: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🗺️ Northeast Waste Hauler Directory</h1>
+        <p>Comprehensive waste transporter database for Vermont, New Hampshire, and Massachusetts.<br>
+        <strong>443 haulers</strong> across <strong>3 states</strong>.</p>
+    </header>
+    
+    <div class="quality-legend">
+        <div class="quality-item">
+            <span class="quality-dot dot-gold"></span>
+            <span><strong>Gold:</strong> Complete state permit data + geocoded</span>
+        </div>
+        <div class="quality-item">
+            <span class="quality-dot dot-partial"></span>
+            <span><strong>Partial:</strong> Cross-reference only, needs verification</span>
+        </div>
+        <div class="quality-item">
+            <span class="quality-dot dot-minimal"></span>
+            <span><strong>Missing:</strong> No geolocation data</span>
+        </div>
+    </div>
+    
+    <div class="stats-bar">
+        <div class="stat-group">
+            <div class="stat-state">Total Northeast</div>
+            <div class="stat-value" style="color: white;">443</div>
+            <div class="stat-label">Haulers</div>
+        </div>
+        <div class="stat-group">
+            <div class="stat-state">Vermont ⭐</div>
+            <div class="stat-value vt">341</div>
+            <div class="stat-label">Gold Standard</div>
+        </div>
+        <div class="stat-group">
+            <div class="stat-state">New Hampshire</div>
+            <div class="stat-value nh">49</div>
+            <div class="stat-label">Cross-Reference</div>
+        </div>
+        <div class="stat-group">
+            <div class="stat-state">Massachusetts</div>
+            <div class="stat-value ma">53</div>
+            <div class="stat-label">Cross-Reference</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="search-section">
+            <div class="search-row">
+                <input type="text" id="search-input" placeholder="Search company, town, or address...">
+                <select id="state-filter">
+                    <option value="">All States</option>
+                    <option value="VT">Vermont (Gold Standard)</option>
+                    <option value="NH">New Hampshire (Partial)</option>
+                    <option value="MA">Massachusetts (Partial)</option>
+                </select>
+                <select id="quality-filter">
+                    <option value="">All Data Quality</option>
+                    <option value="address_level">Address Level (Precise)</option>
+                    <option value="missing">Missing Location</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="results-panel">
+                <div class="results-header">
+                    <span id="results-count">Loading...</span>
+                </div>
+                <div id="hauler-list"></div>
+            </div>
+            
+            <div id="map"></div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p><strong>Northeast Waste Hauler Directory</strong></p>
+        <p style="margin-top: 0.5rem;">
+            Vermont: Complete state permit data (DEC) | 
+            NH & MA: Cross-referenced from VT permits
+        </p>
+        <p style="margin-top: 0.5rem; font-size: 0.75rem; color: #999;">
+            Data current as of March 2026 | VT: 536 haulers in source data, 341 VT-based shown
+        </p>
+    </footer>
+
+    <script>
+        let haulers = [];
+        let map;
+        let markers = [];
+        let activeFilters = { search: '', state: '', quality: '' };
+
+        function initMap() {
+            map = L.map('map').setView([43.5, -71.5], 7);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap'
+            }).addTo(map);
+        }
+
+        async function loadHaulers() {
+            try {
+                const response = await fetch('northeast_haulers.json');
+                haulers = await response.json();
+                renderResults();
+                renderMarkers();
+            } catch (e) {
+                document.getElementById('hauler-list').innerHTML = 
+                    `<div style="padding: 2rem; text-align: center;">Error loading data</div>`;
+            }
+        }
+
+        function getQualityBadge(hauler) {
+            const state = hauler.state_source;
+            const quality = hauler.data_quality;
+            const location = hauler.location_quality;
+            
+            if (state === 'VT') {
+                if (location === 'address_level') {
+                    return `<span class="quality-badge quality-gold">⭐ VT Complete</span>`;
+                }
+                return `<span class="quality-badge quality-gold">VT Complete</span>`;
+            }
+            return `<span class="quality-badge quality-crossref">⚠️ Cross-Ref</span>`;
+        }
+
+        function filterHaulers() {
+            return haulers.filter(h => {
+                if (activeFilters.search) {
+                    const search = activeFilters.search.toLowerCase();
+                    const match = h.company.toLowerCase().includes(search) ||
+                                  h.town.toLowerCase().includes(search);
+                    if (!match) return false;
+                }
+                
+                if (activeFilters.state && h.state !== activeFilters.state) {
+                    return false;
+                }
+                
+                if (activeFilters.quality) {
+                    if (activeFilters.quality === 'address_level' && h.location_quality !== 'address_level') {
+                        return false;
+                    }
+                    if (activeFilters.quality === 'missing' && h.location_quality !== 'missing') {
+                        return false;
+                    }
+                }
+                
+                return true;
+            });
+        }
+
+        function renderResults() {
+            const filtered = filterHaulers();
+            const container = document.getElementById('hauler-list');
+            
+            document.getElementById('results-count').textContent = 
+                `${filtered.length} haulers found`;
+            
+            if (filtered.length === 0) {
+                container.innerHTML = `<div style="padding: 2rem; text-align: center; color: #666;">No haulers match</div>`;
+                return;
+            }
+            
+            container.innerHTML = filtered.map(h => {
+                const stateClass = h.state.toLowerCase();
+                return `
+                <div class="hauler-card ${stateClass}">
+                    <div class="hauler-header">
+                        <div>
+                            <div class="hauler-name">${escapeHtml(h.company)}</div>
+                            <div class="hauler-location">${escapeHtml(h.town)}, ${h.state}</div>
+                        </div>
+                        ${getQualityBadge(h)}
+                    </div>
+                    <div class="hauler-types">
+                        ${h.waste_types.split('').map(t => 
+                            `<span class="type-badge type-${t.toLowerCase()}">${t}</span>`
+                        ).join('')}
+                        ${h.bear_resistant?.toLowerCase() === 'yes' ? '<span style="font-size: 0.75rem;">🐻</span>' : ''}
+                    </div>
+                    ${h.phone_formatted ? `<div style="font-size: 0.8rem; color: #666; margin-top: 0.25rem;">${h.phone_formatted}</div>` : ''}
+                </div>
+            `}).join('');
+        }
+
+        function renderMarkers() {
+            markers.forEach(m => map.removeLayer(m));
+            markers = [];
+            
+            const filtered = filterHaulers().filter(h => h.lat && h.lng);
+            
+            filtered.forEach(h => {
+                const color = h.state === 'VT' ? '#fbbf24' : h.state === 'NH' ? '#f97316' : '#3b82f6';
+                
+                const popup = `
+                    <div class="map-popup">
+                        <h3>${escapeHtml(h.company)}</h3>
+                        <p>${escapeHtml(h.town)}, ${h.state}</p>
+                        <p>${h.waste_types}</p>
+                        ${h.phone_formatted ? `<p>${h.phone_formatted}</p>` : ''}
+                    </div>
+                `;
+                
+                const marker = L.circleMarker([h.lat, h.lng], {
+                    radius: 6,
+                    fillColor: color,
+                    color: '#fff',
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                }).addTo(map).bindPopup(popup);
+                
+                markers.push(marker);
+            });
+            
+            if (markers.length > 0) {
+                const group = new L.featureGroup(markers);
+                map.fitBounds(group.getBounds().pad(0.1));
+            }
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Event listeners
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            activeFilters.search = e.target.value;
+            renderResults();
+            renderMarkers();
+        });
+
+        document.getElementById('state-filter').addEventListener('change', (e) => {
+            activeFilters.state = e.target.value;
+            renderResults();
+            renderMarkers();
+        });
+
+        document.getElementById('quality-filter').addEventListener('change', (e) => {
+            activeFilters.quality = e.target.value;
+            renderResults();
+            renderMarkers();
+        });
+
+        initMap();
+        loadHaulers();
+    </script>
+</body>
+</html>
